@@ -138,7 +138,7 @@ export default function HomePage() {
         <div id="testimonials" data-section="testimonials">
           <TestimonialTrustCard
             textAnimation="fade-blur"
-            quote="Webild completely transformed our online presence. The team delivered a stunning website that exceeded our expectations and doubled our conversion rate."
+            quote="Figo completely transformed our online presence. The team delivered a stunning website that exceeded our expectations and doubled our conversion rate."
             rating={5}
             author="— Maria Santos, CEO at Luxuria Travel"
             avatars={[

@@ -138,13 +138,13 @@ export default function HomePage() {
         <div id="testimonials" data-section="testimonials">
           <TestimonialTrustCard
             textAnimation="fade-blur"
-            quote="Figo completely transformed our online presence. The team delivered a stunning website that exceeded our expectations and doubled our conversion rate."
+            quote="Webild completely transformed our online presence. The team delivered a stunning website that exceeded our expectations and doubled our conversion rate."
             rating={5}
             author="— Maria Santos, CEO at Luxuria Travel"
             avatars={[
-              { name: "Maria Santos", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/web-agency-2/team-1.webp" },
-              { name: "James Chen", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/web-agency-2/team-2.webp" },
-              { name: "Sofia Reyes", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/web-agency-2/team-3.webp" },
+              { name: "Maria Santos", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/web-agency-2/team-1.webp?_wi=1" },
+              { name: "James Chen", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/web-agency-2/team-2.webp?_wi=1" },
+              { name: "Sofia Reyes", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/web-agency-2/team-3.webp?_wi=1" },
               { name: "David Kim", imageSrc: "https://randomuser.me/api/portraits/men/32.jpg" },
               { name: "Emma Wilson", imageSrc: "https://randomuser.me/api/portraits/women/44.jpg" },
               { name: "Alex Thompson", imageSrc: "https://randomuser.me/api/portraits/men/67.jpg" },
@@ -203,17 +203,17 @@ export default function HomePage() {
               {
                 name: "Sarah Miller",
                 role: "Lead Developer",
-                imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/web-agency-2/team-1.webp",
+                imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/web-agency-2/team-1.webp?_wi=2",
               },
               {
                 name: "Valentina Reyes",
                 role: "Creative Director",
-                imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/web-agency-2/team-2.webp",
+                imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/web-agency-2/team-2.webp?_wi=2",
               },
               {
                 name: "Carlos Mendoza",
                 role: "UX Designer",
-                imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/web-agency-2/team-3.webp",
+                imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/web-agency-2/team-3.webp?_wi=2",
               },
             ]}
           />

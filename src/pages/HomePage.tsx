@@ -257,7 +257,7 @@ export default function HomePage() {
             title="Ready to Transform Your Digital Presence?"
             description="Let's build something extraordinary together. Get in touch and let's discuss your next project."
             inputPlaceholder="Enter your email"
-            buttonText="Start Your Project"
+            buttonText="Get Your Free Consultation"
           />
         </div>
 

@@ -24,7 +24,7 @@ export default function HomePage() {
             tag="Award-Winning Agency"
             title="We Build Digital Experiences"
             description="Transform your brand with cutting-edge web design and development. We craft stunning websites that convert visitors into customers."
-            primaryButton={{ text: "Start Project", href: "#contact" }}
+            primaryButton={{ text: "Book a Consultation", href: "https://api.leadconnectorhq.com/widget/booking/r9TebD9ETWLcafdipYxW" }}
             secondaryButton={{ text: "View Work", href: "#work" }}
             leftItems={[
               { imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/web-agency-2/shot-1.webp" },

@@ -160,7 +160,7 @@ export default function HomePage() {
             description="Years of experience building digital products that drive real results."
             metrics={[
               {
-                value: "100+",
+                value: "80+",
                 title: "Projects Delivered",
                 features: [
                   "E-commerce platforms",
@@ -180,12 +180,12 @@ export default function HomePage() {
                 ],
               },
               {
-                value: "8+",
+                value: "1+",
                 title: "Years Experience",
                 features: [
                   "Industry expertise",
                   "Award-winning work",
-                  "Global clientele",
+                  "Australian clientele",
                   "Proven methodology",
                 ],
               },

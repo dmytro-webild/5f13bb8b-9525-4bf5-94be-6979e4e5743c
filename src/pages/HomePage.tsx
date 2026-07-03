@@ -17,8 +17,7 @@ import TeamSection from './HomePage/sections/Team';
 import FaqSection from './HomePage/sections/Faq';
 import ContactSection from './HomePage/sections/Contact';
 
-
-import BookingWidgetSection from './HomePage/sections/BookingWidget';export default function HomePage(): React.JSX.Element {
+export default function HomePage(): React.JSX.Element {
   return (
 <StyleProvider siteBackground="aurora" heroBackground="lightRaysCorner" buttonVariant="stagger">
         <SiteBackgroundSlot />
@@ -42,7 +41,6 @@ import BookingWidgetSection from './HomePage/sections/BookingWidget';export defa
         <FaqSection />
 
         <ContactSection />
-      <BookingWidgetSection />
 
         
       </StyleProvider>

@@ -59,7 +59,7 @@ const features = [
     title: "Business Automation",
     description: "Streamline your operations with custom workflows. From lead capture to CRM entry and automated follow-ups, I build systems that save you hours of manual work every week.",
     bentoComponent: "icon-text-marquee",
-    centerIcon: Sparkles,
+    centerIcon: Settings,
     marqueeTexts: ["Lead Capture", "CRM Entry", "Automated Follow-ups", "Workflow Optimization"]
   },
   {

@@ -9,8 +9,12 @@ jobs:
 
     steps:
       - name: Checkout
-        run: git clone --depth 1 --branch ${{ gitea.ref_name }} ${{ gitea.server_url }}/${{ gitea.repository }}.git . || exit 1
-
+        run: |
+          HOST="${{ gitea.server_url }}"; HOST="${HOST#https://}"; HOST="${HOST#http://}"
+          TOKEN="${{ github.token }}"
+          [ -z "$TOKEN" ] && TOKEN="${{ secrets.GITHUB_TOKEN }}"
+          if [ -z "$TOKEN" ]; then echo "::error::CI checkout has no auth token (github.token and secrets.GITHUB_TOKEN both empty)"; exit 1; fi
+          git clone --depth 1 --branch "${{ gitea.ref_name }}" "https://token:${TOKEN}@${HOST}/${{ gitea.repository }}.git" . || exit 1
       - name: Install dependencies
         run: |
           if [ -f "vite.config.ts" ]; then

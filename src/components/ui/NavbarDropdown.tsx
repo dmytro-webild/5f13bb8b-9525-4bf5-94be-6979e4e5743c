@@ -46,7 +46,7 @@ const NavbarDropdown = ({ logo, navItems, ctaButton }: NavbarDropdownProps) => {
         <a href="/" className="pl-2 text-xl font-medium text-foreground flex items-center gap-2">{logo}</a>
 
         <div className="flex items-center gap-2 xl:gap-3 2xl:gap-4">
-          <Button text={ctaButton.text} href={ctaButton.href} variant="primary" animate={false} />
+          <Button text={ctaButton.text} href={ctaButton.href} variant="primary" animate={false} className="hidden sm:inline-flex" />
 
           <div
             className="relative flex items-center justify-center size-9 rounded cursor-pointer primary-button"

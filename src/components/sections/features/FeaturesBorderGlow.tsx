@@ -32,9 +32,9 @@ const FeaturesBorderGlow = ({
   textAnimation,
 }: FeaturesBorderGlowProps) => {
   return (
-    <section aria-label="Features border glow section" className="flex flex-col gap-8 md:gap-10 py-20">
+    <section aria-label="Features border glow section" className="flex flex-col gap-6 md:gap-10 py-12 md:py-20">
       <div className="flex flex-col items-center gap-2 w-content-width mx-auto">
-        <div className="px-3 py-1 mb-1 text-sm card rounded w-fit">
+        <div className="px-3 py-1 mb-1 text-xs md:text-sm card rounded-full w-fit">
           <p>{tag}</p>
         </div>
 
@@ -43,7 +43,7 @@ const FeaturesBorderGlow = ({
           variant={textAnimation}
           gradientText={true}
           tag="h2"
-          className="md:max-w-8/10 text-6xl 2xl:text-7xl leading-[1.15] font-semibold text-center text-balance"
+          className="md:max-w-8/10 text-3xl sm:text-5xl md:text-6xl 2xl:text-7xl leading-[1.15] font-semibold text-center text-balance"
         />
 
         <TextAnimation
@@ -51,13 +51,13 @@ const FeaturesBorderGlow = ({
           variant={textAnimation}
           gradientText={false}
           tag="p"
-          className="md:max-w-7/10 text-lg md:text-xl leading-snug text-center text-balance"
+          className="md:max-w-7/10 text-base md:text-xl leading-snug text-center text-balance opacity-90"
         />
 
         {(primaryButton || secondaryButton) && (
-          <div className="flex flex-wrap justify-center gap-3 mt-2 md:mt-3">
-            {primaryButton && <Button text={primaryButton.text} href={primaryButton.href} variant="primary" />}
-            {secondaryButton && <Button text={secondaryButton.text} href={secondaryButton.href} variant="secondary" animationDelay={0.1} />}
+          <div className="flex flex-col sm:flex-row w-full sm:w-auto justify-center gap-3 mt-2 md:mt-3">
+            {primaryButton && <Button text={primaryButton.text} href={primaryButton.href} variant="primary" className="w-full sm:w-auto text-center" />}
+            {secondaryButton && <Button text={secondaryButton.text} href={secondaryButton.href} variant="secondary" animationDelay={0.1} className="w-full sm:w-auto text-center" />}
           </div>
         )}
       </div>
@@ -67,13 +67,13 @@ const FeaturesBorderGlow = ({
           {features.map((feature) => {
             const FeatureIcon = resolveIcon(feature.icon);
             return (
-              <div key={feature.title} className="relative flex flex-col justify-between gap-4 xl:gap-5 2xl:gap-6 p-6 xl:p-7 2xl:p-8 mt-0.5 h-full min-h-60 md:min-h-70 2xl:min-h-80 card rounded">
-                <div className="flex items-center justify-center size-12 md:size-14 2xl:size-16 primary-button rounded-full">
+              <div key={feature.title} className="relative flex flex-col justify-between gap-4 p-5 sm:p-6 xl:p-7 2xl:p-8 mt-0.5 h-full min-h-52 md:min-h-70 2xl:min-h-80 card rounded-2xl md:rounded">
+                <div className="flex items-center justify-center size-10 md:size-14 2xl:size-16 primary-button rounded-xl md:rounded-full">
                   <FeatureIcon className="size-4 text-primary-cta-text" strokeWidth={1.5} />
                 </div>
                 <div className="flex flex-col gap-1">
-                  <h3 className="text-2xl font-semibold leading-snug text-balance">{feature.title}</h3>
-                  <p className="text-base leading-snug text-balance">{feature.description}</p>
+                  <h3 className="text-xl md:text-2xl font-semibold leading-snug text-balance">{feature.title}</h3>
+                  <p className="text-sm md:text-base leading-snug text-balance opacity-85">{feature.description}</p>
                 </div>
                 <BorderGlow />
               </div>

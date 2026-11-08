@@ -42,18 +42,18 @@ const TestimonialTrustCard = ({
           variant={textAnimation}
           gradientText={false}
           tag="p"
-          className="md:max-w-8/10 text-2xl sm:text-4xl md:text-5xl 2xl:text-6xl leading-[1.25] font-semibold text-center text-balance"
+          className="md:max-w-8/10 text-xl sm:text-3xl md:text-5xl 2xl:text-6xl leading-[1.3] font-semibold text-center text-balance tracking-tight"
         />
 
-        <ScrollReveal variant="slide-up" delay={0.1} className="md:max-w-7/10 text-sm md:text-xl leading-snug text-center text-balance opacity-85">
+        <ScrollReveal variant="slide-up" delay={0.1} className="md:max-w-7/10 text-xs sm:text-sm md:text-xl leading-snug text-center text-balance opacity-85 font-medium">
           <p>{author}</p>
         </ScrollReveal>
 
-        <ScrollReveal variant="slide-up" delay={0.2} className="flex items-center justify-center mt-1">
+        <ScrollReveal variant="slide-up" delay={0.2} className="flex items-center justify-center mt-2">
           {visibleAvatars.map((avatar, index) => (
             <div
               key={avatar.name}
-              className={cls("relative size-10 sm:size-12 md:size-16 overflow-hidden rounded-full border-2 border-background", index > 0 && "-ml-3 sm:-ml-5")}
+              className={cls("relative size-9 sm:size-12 md:size-16 overflow-hidden rounded-full border-2 border-background shadow-md", index > 0 && "-ml-2.5 sm:-ml-5")}
               style={{ zIndex: visibleAvatars.length - index }}
             >
               <ImageOrVideo imageSrc={avatar.imageSrc} videoSrc={avatar.videoSrc} />
@@ -61,10 +61,10 @@ const TestimonialTrustCard = ({
           ))}
           {remainingCount > 0 && (
             <div
-              className="flex items-center justify-center size-10 sm:size-12 md:size-16 -ml-3 sm:-ml-5 rounded-full border-2 border-background card"
+              className="flex items-center justify-center size-9 sm:size-12 md:size-16 -ml-2.5 sm:-ml-5 rounded-full border-2 border-background card shadow-md"
               style={{ zIndex: 0 }}
             >
-              <span className="text-xs md:text-base font-semibold">+{remainingCount}</span>
+              <span className="text-2xs sm:text-xs md:text-base font-semibold">+{remainingCount}</span>
             </div>
           )}
         </ScrollReveal>

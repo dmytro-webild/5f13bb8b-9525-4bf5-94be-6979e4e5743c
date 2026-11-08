@@ -1,6 +1,7 @@
 import React from 'react';
 import TextAnimation from "@/components/ui/TextAnimation";
 import ScrollReveal from "@/components/ui/ScrollReveal";
+import Button from "@/components/ui/Button";
 import { Layout, Server, Search, ShieldCheck, Zap, CheckCircle2 } from 'lucide-react';
 
 const services = [
@@ -137,6 +138,19 @@ export default function ServicesSection(): React.JSX.Element {
                   </div>
                 );
               })}
+            </div>
+
+            <div className="flex flex-wrap items-center justify-center gap-4 pt-8">
+              <Button
+                text="Get a website quote"
+                href="https://calendly.com/josiabatoni/30min"
+                variant="primary"
+              />
+              <Button
+                text="Discuss hosting options"
+                href="https://calendly.com/josiabatoni/30min"
+                variant="secondary"
+              />
             </div>
           </ScrollReveal>
         </div>

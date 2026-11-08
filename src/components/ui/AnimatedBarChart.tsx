@@ -23,12 +23,12 @@ const AnimatedBarChart = () => {
 
   return (
     <div
-      className="hidden md:block h-full w-full"
+      className="block h-full w-full"
       style={{ maskImage: "linear-gradient(to bottom, black 40%, transparent)" }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className="flex items-end gap-4 h-full w-full">
+      <div className="flex items-end gap-2 sm:gap-4 h-full w-full">
         {BARS.map((bar, i) => (
           <div
             key={i}

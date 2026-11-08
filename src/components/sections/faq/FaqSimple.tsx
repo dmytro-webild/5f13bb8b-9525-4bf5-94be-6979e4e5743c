@@ -71,7 +71,7 @@ const FaqSimple = ({
             <div
               key={index}
               onClick={() => handleToggle(index)}
-              className="p-4 sm:p-4.5 xl:p-5 rounded-xl md:rounded card cursor-pointer select-none"
+              className="p-4 sm:p-5 rounded-2xl md:rounded-xl card cursor-pointer select-none active:scale-[0.99] transition-transform border border-white/5"
             >
               <div className="flex items-center justify-between gap-3 xl:gap-3.5 2xl:gap-4">
                 <h3 className="text-base sm:text-lg md:text-xl font-medium leading-snug">{item.question}</h3>

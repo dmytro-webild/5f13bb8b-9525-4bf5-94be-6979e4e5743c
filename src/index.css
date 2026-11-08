@@ -1,19 +1,19 @@
-/* Cyans Agency - Light Orange Color Theme */
+/* Cyans Agency - Emerald & Mint Cyan Color Theme */
 @import "tailwindcss";
 @import "./styles/masks.css";
 @import "./styles/animations.css";
 
 :root {
-  /* Light Orange Theme */
-  --background: #fff8f3;
+  /* Emerald & Mint Cyan Theme */
+  --background: #f0fdf4;
   --card: #ffffff;
-  --foreground: #1c1917;
-  --primary-cta: #ea580c;
+  --foreground: #064e3b;
+  --primary-cta: #059669;
   --primary-cta-text: #ffffff;
-  --secondary-cta: #fff1e6;
-  --secondary-cta-text: #c2410c;
-  --accent: #f97316;
-  --background-accent: #fed7aa;
+  --secondary-cta: #ecfdf5;
+  --secondary-cta-text: #047857;
+  --accent: #10b981;
+  --background-accent: #a7f3d0;
 
   /* @layout/border-radius/soft */
   --radius: 1.5rem;
@@ -162,21 +162,21 @@ h6 {
 
 .card {
   backdrop-filter: blur(12px);
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 247, 237, 0.85));
-  box-shadow: 0 4px 20px -2px rgba(249, 115, 22, 0.1), 0 2px 6px -1px rgba(0, 0, 0, 0.04);
-  border: 1px solid rgba(251, 146, 60, 0.25);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(240, 253, 244, 0.85));
+  box-shadow: 0 4px 20px -2px rgba(16, 185, 129, 0.12), 0 2px 6px -1px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(52, 211, 153, 0.25);
 }
 
 .primary-button {
-  background: linear-gradient(135deg, #fb923c 0%, #ea580c 100%);
+  background: linear-gradient(135deg, #34d399 0%, #059669 100%);
   color: var(--color-primary-cta-text);
-  box-shadow: 0 4px 16px -2px rgba(234, 88, 12, 0.35), inset 0 1px 1px 0 rgba(255, 255, 255, 0.4);
+  box-shadow: 0 4px 16px -2px rgba(5, 150, 105, 0.35), inset 0 1px 1px 0 rgba(255, 255, 255, 0.4);
 }
 
 .secondary-button {
   backdrop-filter: blur(8px);
-  background: linear-gradient(to bottom right, var(--color-secondary-cta), #ffedd5);
+  background: linear-gradient(to bottom right, var(--color-secondary-cta), #d1fae5);
   color: var(--color-secondary-cta-text);
-  box-shadow: 0 2px 8px -2px rgba(234, 88, 12, 0.12);
-  border: 1px solid rgba(251, 146, 60, 0.3);
+  box-shadow: 0 2px 8px -2px rgba(5, 150, 105, 0.12);
+  border: 1px solid rgba(52, 211, 153, 0.3);
 }

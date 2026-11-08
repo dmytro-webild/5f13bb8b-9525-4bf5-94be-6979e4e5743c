@@ -17,15 +17,16 @@ export default function Layout() {
             className="h-8 w-auto object-contain brightness-0 invert"
           />
         }
-                navItems={[
-                  { name: "Services", href: "#services" },
-                  { name: "Process", href: "#process" },
-                  { name: "Work", href: "#work" },
-                  { name: "About", href: "#team" },
-                  { name: "Contact", href: "#contact" },
-                ]}
-                ctaButton={{ text: "Book Consultation", href: "#contact" }}
-              />
+        navItems={[
+          { name: "Services", href: "#services" },
+          { name: "What's Included", href: "#whats-included" },
+          { name: "Process", href: "#process" },
+          { name: "Work", href: "#work" },
+          { name: "About", href: "#team" },
+          { name: "Contact", href: "#contact" },
+        ]}
+        ctaButton={{ text: "Book Consultation", href: "#contact" }}
+      />
       <main className="flex-grow">
         <Outlet />
       </main>
@@ -36,6 +37,7 @@ export default function Layout() {
             title: "Navigation",
             items: [
               { label: "Services", href: "#services" },
+              { label: "What's Included", href: "#whats-included" },
               { label: "Process", href: "#process" },
               { label: "Contact", href: "#contact" },
             ],

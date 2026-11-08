@@ -23,7 +23,7 @@ export default function WorkSection(): React.JSX.Element {
             />
 
             <TextAnimation
-              text={"This website is a direct example of my work — clean design, fast performance, and built for conversion."}
+              text={"This website is a direct example of my work — bespoke design, fast loading speeds, mobile-first responsiveness, and built-in SEO."}
               variant={"fade-blur"}
               gradientText={false}
               tag="p"
@@ -46,13 +46,13 @@ export default function WorkSection(): React.JSX.Element {
                 </div>
                 <h3 className="text-3xl font-bold text-cream">Cyans Agency Website</h3>
                 <p className="text-base leading-relaxed text-foreground/80">
-                  Built for my sole-trader business in Melbourne. Designed to demonstrate fast loading, crisp typography, responsive layout, and integrated lead booking.
+                  Built for my sole-trader business in Melbourne. Designed to demonstrate fast loading, crisp typography, custom responsive layout, and built-in lead automation.
                 </p>
                 <div className="flex flex-wrap gap-2 pt-2">
-                  <span className="text-xs px-3 py-1 rounded card border border-white/10 text-foreground/70">Custom Design</span>
-                  <span className="text-xs px-3 py-1 rounded card border border-white/10 text-foreground/70">Mobile Responsive</span>
+                  <span className="text-xs px-3 py-1 rounded card border border-white/10 text-foreground/70">Custom Responsive Design</span>
+                  <span className="text-xs px-3 py-1 rounded card border border-white/10 text-foreground/70">Australian Hosting</span>
+                  <span className="text-xs px-3 py-1 rounded card border border-white/10 text-foreground/70">Built-In On-Page SEO</span>
                   <span className="text-xs px-3 py-1 rounded card border border-white/10 text-foreground/70">Lead Automation</span>
-                  <span className="text-xs px-3 py-1 rounded card border border-white/10 text-foreground/70">Google Review System</span>
                 </div>
               </div>
             </div>

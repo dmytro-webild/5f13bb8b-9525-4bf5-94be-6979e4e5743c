@@ -1,35 +1,35 @@
 import React from 'react';
 import FeaturesBorderGlow from "@/components/sections/features/FeaturesBorderGlow";
-import { PhoneCall, Palette, Rocket, Star } from "lucide-react";
+import { PhoneCall, Compass, Rocket, ShieldCheck } from "lucide-react";
 
 export default function ProcessSection(): React.JSX.Element {
   return (
     <div id="process" data-section="process">
       <FeaturesBorderGlow
         textAnimation="fade-blur"
-        tag="How It Works"
+        tag="Process"
         title="Simple 4-Step Process"
-        description="Clear, honest, and straightforward execution from start to finish."
+        description="Collaborative and transparent process — clients always know where things are at, with no surprise bills. Delivered on time, on brief, and on budget."
         features={[
           {
             icon: PhoneCall,
-            title: "1. Quick call",
-            description: "I figure out what your business needs, your current setup, and your lead goals.",
+            title: "1. Discovery call",
+            description: "I learn your goals, target market, and competitive landscape during an initial conversation.",
           },
           {
-            icon: Palette,
-            title: "2. Design",
-            description: "I mock up the website and create a custom review & lead automation plan.",
+            icon: Compass,
+            title: "2. Strategy & design",
+            description: "Custom wireframes and design concepts tailored to represent your brand and convert visitors.",
           },
           {
             icon: Rocket,
-            title: "3. Build & launch",
-            description: "The site goes live — fast, responsive, and optimized for converting local visitors.",
+            title: "3. Build & optimise",
+            description: "Clean, fast website development with mobile-first responsiveness and built-in SEO optimisation.",
           },
           {
-            icon: Star,
-            title: "4. Reviews & follow-up",
-            description: "I set up the automated system that asks happy customers for Google reviews and follows up on missed leads.",
+            icon: ShieldCheck,
+            title: "4. Launch & support",
+            description: "Go live with confidence, followed by managed Australian hosting, ongoing maintenance, and lead systems.",
           },
         ]}
       />

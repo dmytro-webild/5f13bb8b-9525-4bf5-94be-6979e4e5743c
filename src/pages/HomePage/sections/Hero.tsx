@@ -16,7 +16,7 @@ export default function HeroSection(): React.JSX.Element {
         secondaryButton={{ text: "View Work", href: "#work" }}
         imageSrc="https://storage.googleapis.com/webild/users/user_3FwL5pfkeyOX14T98rYzVwLBGK9/uploaded-1794128875631-x65p39bt.png"
         containerClassName="bg-transparent border-0 shadow-none p-0 overflow-visible"
-        imageClassName="object-contain w-full h-full max-h-[480px] rounded-none mix-blend-screen bg-transparent border-0 shadow-none drop-shadow-2xl"
+        imageClassName="object-contain w-full h-full max-h-[480px] rounded-none mix-blend-multiply bg-transparent border-0 shadow-none drop-shadow-2xl"
       />
     </div>
   );

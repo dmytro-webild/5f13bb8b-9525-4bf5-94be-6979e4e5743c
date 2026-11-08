@@ -103,10 +103,10 @@ const getBentoComponent = (feature: FeatureCard) => {
 };
 
 const ServicesInline = () => (
-  <section aria-label="Features bento section" className="py-12 md:py-20">
-    <div className="flex flex-col gap-6 md:gap-10">
+  <section aria-label="Features bento section" className="py-20">
+    <div className="flex flex-col gap-8 md:gap-10">
       <div className="flex flex-col items-center w-content-width mx-auto gap-2">
-        <div className="px-3 py-1 mb-1 text-xs md:text-sm card rounded-full w-fit">
+        <div className="px-3 py-1 mb-1 text-sm card rounded w-fit">
           <p>{"Services"}</p>
         </div>
 
@@ -115,7 +115,7 @@ const ServicesInline = () => (
           variant={"fade-blur"}
           gradientText={true}
           tag="h2"
-          className="md:max-w-8/10 text-3xl sm:text-5xl md:text-6xl 2xl:text-7xl leading-[1.15] font-semibold text-center text-balance"
+          className="md:max-w-8/10 text-6xl 2xl:text-7xl leading-[1.15] font-semibold text-center text-balance"
         />
 
         <TextAnimation
@@ -123,11 +123,11 @@ const ServicesInline = () => (
           variant={"fade-blur"}
           gradientText={false}
           tag="p"
-          className="md:max-w-7/10 text-base md:text-xl leading-snug text-center text-balance opacity-90"
+          className="md:max-w-7/10 text-lg md:text-xl leading-snug text-center text-balance"
         />
 
         {(undefined || undefined) && (
-          <div className="flex flex-col sm:flex-row w-full sm:w-auto justify-center gap-3 mt-2 md:mt-3">
+          <div className="flex flex-wrap justify-center gap-3 mt-2 md:mt-3">
             {undefined && <Button text={undefined.text} href={undefined.href} variant="primary"/>}
             {undefined && <Button text={undefined.text} href={undefined.href} variant="secondary"animationDelay={0.1} />}
           </div>
@@ -136,11 +136,11 @@ const ServicesInline = () => (
       <ScrollReveal variant="slide-up">
         <GridOrCarousel>
           {features.map((feature) => (
-            <div key={feature.title} className="flex flex-col gap-3 p-4 xl:p-4 2xl:p-5 card rounded-2xl md:rounded h-full">
-              <div className="relative h-60 sm:h-72 overflow-hidden rounded-xl p-3 xl:p-3.5 2xl:p-4 bg-foreground/5 shadow shadow-foreground/5">{getBentoComponent(feature)}</div>
-              <div className="flex flex-col gap-1 p-2 sm:p-3 xl:p-3.5 2xl:p-4">
-                <h3 className="text-xl md:text-2xl font-semibold leading-snug">{feature.title}</h3>
-                <p className="text-sm md:text-base leading-snug opacity-85">{feature.description}</p>
+            <div key={feature.title} className="flex flex-col gap-3 xl:gap-3.5 2xl:gap-4 p-3 xl:p-3.5 2xl:p-4 card rounded h-full">
+              <div className="relative h-72 overflow-hidden rounded p-3 xl:p-3.5 2xl:p-4 bg-foreground/5 shadow shadow-foreground/5">{getBentoComponent(feature)}</div>
+              <div className="flex flex-col gap-1 p-3 xl:p-3.5 2xl:p-4">
+                <h3 className="text-2xl font-semibold leading-snug">{feature.title}</h3>
+                <p className="text-base leading-snug">{feature.description}</p>
               </div>
             </div>
           ))}

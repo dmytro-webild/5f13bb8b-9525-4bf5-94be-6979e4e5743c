@@ -52,8 +52,8 @@ const features: FeatureCard[] = [
     aiIcon: Bot,
     userIcon: User,
     exchanges: [
-      { userMessage: "Hi, I missed your call. Can I get more info about your services?", aiResponse: "Hi! Thanks for reaching out. We help local businesses get more leads & Google reviews. Would you like to book a quick call?" },
-      { userMessage: "Yes, I'd love to book a quick chat.", aiResponse: "Great! Pick any time on our online calendar that suits you." }
+      { userMessage: "Hi, I missed your call. Can I get more info about your services?", aiResponse: "Hi! Thanks for reaching out. I help local businesses get more leads & Google reviews. Would you like to book a quick chat?" },
+      { userMessage: "Yes, I'd love to book a quick chat.", aiResponse: "Great! Pick any time on my online calendar that suits you." }
     ],
     placeholder: "Type a message..."
   }
@@ -84,7 +84,7 @@ const ServicesInline = () => (
         />
 
         <TextAnimation
-          text={"We focus strictly on high-impact web and automation solutions that help local Australian businesses grow."}
+          text={"I focus strictly on high-impact web and automation solutions that help local Australian businesses grow."}
           variant={"fade-blur"}
           gradientText={false}
           tag="p"

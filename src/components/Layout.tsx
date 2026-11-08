@@ -33,33 +33,26 @@ export default function Layout() {
         <Outlet />
       </main>
       <FooterSimpleReveal
-                brand="Cyans Agency"
-                columns={[
-                  {
-                    title: "Navigation",
-                    items: [
-                      { label: "Services", href: "#services" },
-                      { label: "Process", href: "#process" },
-                      { label: "Work", href: "#work" },
-                      { label: "About", href: "#team" },
-                      { label: "Contact", href: "#contact" },
-                    ],
-                  },
-                  {
-                    title: "Services",
-                    items: [
-                      { label: "Websites", href: "#services" },
-                      { label: "Google Reviews", href: "#services" },
-                      { label: "Lead Follow-up & Automation", href: "#services" },
-                    ],
-                  },
-                ]}
-                copyright="© 2026 Cyans Agency. All rights reserved. Melbourne, Australia."
-                links={[
-                  { label: "Privacy Policy", href: "#" },
-                  { label: "Terms of Service", href: "#" },
-                ]}
-              />
+        brand="Cyans Agency"
+        columns={[
+          {
+            title: "Navigation",
+            items: [
+              { label: "Services", href: "#services" },
+              { label: "Process", href: "#process" },
+              { label: "Contact", href: "#contact" },
+            ],
+          },
+          {
+            title: "Social",
+            items: [
+              { label: "cyans.agency", href: "https://instagram.com/cyans.agency" },
+            ],
+          },
+        ]}
+        copyright="© 2026 Cyans Agency"
+        links={[]}
+      />
     </StyleProvider>
   );
 }

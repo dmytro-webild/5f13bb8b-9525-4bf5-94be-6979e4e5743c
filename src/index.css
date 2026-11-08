@@ -1,19 +1,19 @@
-/* Web Agency - Dark Monochrome */
+/* Cyans Agency - Vibrant Electric Color Theme */
 @import "tailwindcss";
 @import "./styles/masks.css";
 @import "./styles/animations.css";
 
 :root {
-  /* Dark theme with monochrome accents */
-  --background: #0a0a0a;
-  --card: #161616;
-  --foreground: #f0f0f0;
-  --primary-cta: #ffffff;
-  --primary-cta-text: #0a0a0a;
-  --secondary-cta: #1e1e1e;
-  --secondary-cta-text: #e0e0e0;
-  --accent: #d0d0d0;
-  --background-accent: #434343;
+  /* Vibrant Electric Cyan & Indigo Theme */
+  --background: #070b19;
+  --card: #0f172a;
+  --foreground: #f8fafc;
+  --primary-cta: #00f0ff;
+  --primary-cta-text: #050b18;
+  --secondary-cta: #1e293b;
+  --secondary-cta-text: #38bdf8;
+  --accent: #00f0ff;
+  --background-accent: #7c3aed;
 
   /* @layout/border-radius/soft */
   --radius: 1.5rem;
@@ -161,20 +161,22 @@ h6 {
 }
 
 .card {
-  backdrop-filter: blur(8px);
-  background: linear-gradient(to bottom right, color-mix(in srgb, var(--color-card) 80%, transparent), color-mix(in srgb, var(--color-card) 40%, transparent));
-  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-  border: 1px solid var(--color-card);
+  backdrop-filter: blur(12px);
+  background: linear-gradient(135deg, color-mix(in srgb, var(--color-card) 90%, transparent), color-mix(in srgb, var(--color-card) 60%, transparent));
+  box-shadow: 0 4px 24px -2px color-mix(in srgb, var(--color-background-accent) 20%, transparent);
+  border: 1px solid color-mix(in srgb, var(--color-accent) 30%, color-mix(in srgb, var(--color-card) 70%, transparent));
 }
 
 .primary-button {
-  background: linear-gradient(165deg, color-mix(in srgb, var(--color-primary-cta) 85%, var(--color-foreground)) 0%, var(--color-primary-cta) 40%, color-mix(in srgb, var(--color-primary-cta) 90%, var(--color-background)) 100%);
-  box-shadow: inset 0 1px 1px 0 color-mix(in srgb, var(--color-foreground) 25%, transparent), inset 0 -1px 1px 0 color-mix(in srgb, var(--color-background) 15%, transparent), 0 4px 12px -2px color-mix(in srgb, var(--color-primary-cta) 25%, transparent);
+  background: linear-gradient(135deg, var(--color-primary-cta) 0%, #0284c7 100%);
+  color: var(--color-primary-cta-text);
+  box-shadow: 0 0 20px -2px color-mix(in srgb, var(--color-primary-cta) 60%, transparent), inset 0 1px 1px 0 rgba(255, 255, 255, 0.4);
 }
 
 .secondary-button {
   backdrop-filter: blur(8px);
-  background: linear-gradient(to bottom right, color-mix(in srgb, var(--color-secondary-cta) 80%, transparent), var(--color-secondary-cta));
-  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-  border: 1px solid var(--color-secondary-cta);
+  background: linear-gradient(to bottom right, color-mix(in srgb, var(--color-secondary-cta) 90%, transparent), var(--color-secondary-cta));
+  color: var(--color-secondary-cta-text);
+  box-shadow: 0 2px 10px -2px rgba(0, 0, 0, 0.4);
+  border: 1px solid color-mix(in srgb, var(--color-accent) 35%, transparent);
 }

@@ -36,12 +36,12 @@ const ContactCenter = () => {
   };
 
   return (
-    <section aria-label="Contact section" className="py-10 md:py-20">
+    <section aria-label="Contact section" className="py-20">
       <div className="w-content-width mx-auto">
-        <ScrollReveal variant="slide-up" className="flex items-center justify-center py-8 px-5 sm:py-12 md:py-20 md:px-8 card rounded-2xl md:rounded shadow-xl border border-white/10">
-          <div className="flex flex-col items-center w-full md:w-8/10 xl:w-1/2 gap-3 text-center">
-            <div className="px-3.5 py-1 mb-0.5 text-xs md:text-sm card rounded-full w-fit border border-white/10">
-              <p className="font-medium">{"Get in Touch"}</p>
+        <ScrollReveal variant="slide-up" className="flex items-center justify-center py-20 card rounded">
+          <div className="flex flex-col items-center w-full md:w-1/2 gap-2 px-5">
+            <div className="px-3 py-1 mb-1 text-sm card rounded w-fit">
+              <p>{"Get in Touch"}</p>
             </div>
 
             <TextAnimation
@@ -49,7 +49,7 @@ const ContactCenter = () => {
               variant={"fade-blur"}
               gradientText={true}
               tag="h2"
-              className="text-2xl sm:text-5xl md:text-6xl 2xl:text-7xl leading-[1.15] font-bold text-center text-balance tracking-tight"
+              className="md:max-w-9/10 text-6xl 2xl:text-7xl leading-[1.15] font-semibold text-center text-balance"
             />
 
             <TextAnimation
@@ -57,19 +57,37 @@ const ContactCenter = () => {
               variant={"fade-blur"}
               gradientText={false}
               tag="p"
-              className="text-sm sm:text-base md:text-xl leading-relaxed text-center text-balance opacity-85"
+              className="md:max-w-9/10 text-lg md:text-xl leading-snug text-center text-balance"
             />
 
-            <div className="w-full max-w-md mt-4">
+            <form
+              onSubmit={handleSubmit}
+              className="flex flex-col md:flex-row w-full md:w-8/10 2xl:w-6/10 gap-3 md:gap-1 p-1 mt-2 md:mt-3 card rounded justify-center"
+            >
+              <input
+                type="email"
+                placeholder={"Enter your email"}
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                className="hidden"
+                aria-label="Email address"
+              />
               <a
                 href="https://calendly.com/josiabatoni/30min"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center min-h-[48px] w-full px-6 text-sm md:text-base font-semibold rounded-xl primary-button text-primary-cta-text cursor-pointer text-center shadow-lg active:scale-98 transition-transform"
+                className="flex items-center justify-center h-10 px-6 text-sm rounded primary-button text-primary-cta-text cursor-pointer"
               >
                 {"Get Your Free Consultation"}
               </a>
-            </div>
+              <button
+                type="submit"
+                disabled={isLoading}
+                className="hidden"
+              >
+                {isLoading ? "Sending..." : "Get Your Free Consultation"}
+              </button>
+            </form>
 
             {error && (
               <p className="text-sm text-red-500 text-center">{error}</p>

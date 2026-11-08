@@ -29,13 +29,13 @@ const HeroSplit = ({
   containerClassName,
 }: HeroSplitProps) => {
   return (
-    <section aria-label="Hero section" className="relative flex items-center h-fit md:h-svh pt-26 pb-12 md:py-0">
+    <section aria-label="Hero section" className="relative flex items-center h-fit md:h-svh pt-25 pb-20 md:py-0">
       <HeroBackgroundSlot />
-      <div className="flex flex-col md:flex-row items-center gap-8 md:gap-20 w-content-width mx-auto">
+      <div className="flex flex-col md:flex-row items-center gap-12 md:gap-20 w-content-width mx-auto">
         <div className="w-full md:w-1/2">
-          <div className="flex flex-col items-center md:items-start gap-3.5 sm:gap-4">
-            <div className="px-3.5 py-1 mb-0.5 text-xs md:text-sm card rounded-full w-fit border border-white/10 shadow-sm">
-              <p className="font-medium tracking-wide">{tag}</p>
+          <div className="flex flex-col items-center md:items-start gap-3">
+            <div className="px-3 py-1 mb-1 text-sm card rounded w-fit">
+              <p>{tag}</p>
             </div>
 
             <TextAnimation
@@ -43,7 +43,7 @@ const HeroSplit = ({
               variant={textAnimation}
               gradientText={true}
               tag="h1"
-              className="text-3xl sm:text-5xl md:text-7xl 2xl:text-8xl leading-[1.15] font-bold text-center md:text-left text-balance tracking-tight"
+              className="text-7xl 2xl:text-8xl leading-[1.15] font-semibold text-center md:text-left text-balance"
             />
 
             <TextAnimation
@@ -51,12 +51,12 @@ const HeroSplit = ({
               variant={textAnimation}
               gradientText={false}
               tag="p"
-              className="md:max-w-8/10 text-sm sm:text-base md:text-xl leading-relaxed text-center md:text-left text-balance opacity-85"
+              className="md:max-w-8/10 text-lg md:text-xl leading-snug text-center md:text-left text-balance"
             />
 
-            <div className="flex flex-col sm:flex-row w-full sm:w-auto items-stretch sm:items-center justify-center md:justify-start gap-3 mt-2 sm:mt-4">
-              <Button text={primaryButton.text} href={primaryButton.href} variant="primary" className="w-full sm:w-auto text-center justify-center !py-3.5 !px-6 font-semibold rounded-xl" />
-              <Button text={secondaryButton.text} href={secondaryButton.href} variant="secondary" animationDelay={0.1} className="w-full sm:w-auto text-center justify-center !py-3.5 !px-6 font-medium rounded-xl" />
+            <div className="flex flex-wrap max-md:justify-center gap-3 mt-2 md:mt-3">
+              <Button text={primaryButton.text} href={primaryButton.href} variant="primary"/>
+              <Button text={secondaryButton.text} href={secondaryButton.href} variant="secondary"animationDelay={0.1} />
             </div>
           </div>
         </div>
@@ -65,8 +65,8 @@ const HeroSplit = ({
           variant="slide-up"
           delay={0.2}
           className={cls(
-            "w-full md:w-1/2 h-60 sm:h-80 md:h-[65vh] md:max-h-[75svh] flex items-center justify-center",
-            containerClassName ?? "p-4 xl:p-6 card rounded-2xl md:rounded overflow-hidden"
+            "w-full md:w-1/2 h-100 md:h-[65vh] md:max-h-[75svh] flex items-center justify-center",
+            containerClassName ?? "p-4 xl:p-6 card rounded overflow-hidden"
           )}
         >
           <ImageOrVideo imageSrc={imageSrc} videoSrc={videoSrc} className={imageClassName} />

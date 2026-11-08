@@ -11,6 +11,7 @@ type HeroSplitProps = {
   primaryButton: { text: string; href: string };
   secondaryButton: { text: string; href: string };
   textAnimation: "slide-up" | "fade-blur" | "fade";
+  imageClassName?: string;
 } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never });
 
 const HeroSplit = ({
@@ -22,6 +23,7 @@ const HeroSplit = ({
   imageSrc,
   videoSrc,
   textAnimation,
+  imageClassName,
 }: HeroSplitProps) => {
   return (
     <section aria-label="Hero section" className="relative flex items-center h-fit md:h-svh pt-25 pb-20 md:py-0">
@@ -56,8 +58,8 @@ const HeroSplit = ({
           </div>
         </div>
 
-        <ScrollReveal variant="slide-up" delay={0.2} className="w-full md:w-1/2 h-100 md:h-[65vh] md:max-h-[75svh] p-2 xl:p-3 2xl:p-4 card rounded overflow-hidden">
-          <ImageOrVideo imageSrc={imageSrc} videoSrc={videoSrc} />
+        <ScrollReveal variant="slide-up" delay={0.2} className="w-full md:w-1/2 h-100 md:h-[65vh] md:max-h-[75svh] p-4 xl:p-6 card rounded overflow-hidden flex items-center justify-center">
+          <ImageOrVideo imageSrc={imageSrc} videoSrc={videoSrc} className={imageClassName} />
         </ScrollReveal>
       </div>
     </section>

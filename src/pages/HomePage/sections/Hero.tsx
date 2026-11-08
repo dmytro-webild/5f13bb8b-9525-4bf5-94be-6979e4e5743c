@@ -2,31 +2,21 @@
 // file as the canonical source for the "hero" section.
 
 import React from 'react';
-import HeroSplitVerticalMarqueeTall from "@/components/sections/hero/HeroSplitVerticalMarqueeTall";
+import HeroSplit from "@/components/sections/hero/HeroSplit";
 
 export default function HeroSection(): React.JSX.Element {
   return (
     <div id="hero" data-section="hero">
-              <HeroSplitVerticalMarqueeTall
-                textAnimation="fade-blur"
-                tag="Award-Winning Agency"
-                title="We Build Digital Experiences"
-                description="Transform your brand with cutting-edge web design and development. We craft stunning websites that convert visitors into customers."
-                primaryButton={{ text: "Book a Consultation", href: "https://api.leadconnectorhq.com/widget/booking/r9TebD9ETWLcafdipYxW" }}
-                secondaryButton={{ text: "View Work", href: "#work" }}
-                leftItems={[
-                  { imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/web-agency-2/shot-1.webp" },
-                  { imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/web-agency-2/shot-4.webp" },
-                  { imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/web-agency-2/shot-6.webp" },
-                  { imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/web-agency-2/shot-7.webp" },
-                ]}
-                rightItems={[
-                  { imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/web-agency-2/shot-2.webp" },
-                  { imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/web-agency-2/shot-5.webp" },
-                  { imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/web-agency-2/shot-3.webp" },
-                  { imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/web-agency-2/shot-8.webp" },
-                ]}
-              />
-            </div>
+      <HeroSplit
+        textAnimation="fade-blur"
+        tag="Award-Winning Agency"
+        title="We Build Digital Experiences"
+        description="Transform your brand with cutting-edge web design and development. We craft stunning websites that convert visitors into customers."
+        primaryButton={{ text: "Book a Consultation", href: "https://api.leadconnectorhq.com/widget/booking/r9TebD9ETWLcafdipYxW" }}
+        secondaryButton={{ text: "View Work", href: "#work" }}
+        imageSrc="https://storage.googleapis.com/webild/users/user_3FwL5pfkeyOX14T98rYzVwLBGK9/uploaded-1794128875631-x65p39bt.png"
+        imageClassName="object-contain w-full h-full p-4 md:p-8"
+      />
+    </div>
   );
 }

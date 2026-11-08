@@ -3,6 +3,7 @@ import SiteBackgroundSlot from "@/components/ui/SiteBackgroundSlot";
 import React from 'react';
 import HeroSection from './HomePage/sections/Hero';
 import ServicesSection from './HomePage/sections/Services';
+import WhatsIncludedSection from './HomePage/sections/WhatsIncluded';
 import ProcessSection from './HomePage/sections/Promise';
 import WorkSection from './HomePage/sections/Work';
 import TeamSection from './HomePage/sections/Team';
@@ -17,6 +18,8 @@ export default function HomePage(): React.JSX.Element {
       <HeroSection />
 
       <ServicesSection />
+
+      <WhatsIncludedSection />
 
       <ProcessSection />
 

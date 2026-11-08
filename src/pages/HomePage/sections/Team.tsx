@@ -1,7 +1,7 @@
 import React from 'react';
 import TextAnimation from "@/components/ui/TextAnimation";
 import ScrollReveal from "@/components/ui/ScrollReveal";
-import { UserCheck, MapPin, Sparkles, Code2 } from "lucide-react";
+import { UserCheck, MapPin, ShieldCheck, Code2, Server } from "lucide-react";
 
 export default function TeamSection(): React.JSX.Element {
   return (
@@ -41,18 +41,21 @@ export default function TeamSection(): React.JSX.Element {
               </div>
 
               <p className="text-lg text-foreground/90 leading-relaxed max-w-3xl">
-                I’m Josia, a sole trader based in Melbourne. I started Cyan’s Agency to help local businesses get a website they’re proud of and more Google reviews, so they can book more clients.
+                I’m Josia, a sole trader based in Melbourne. I started Cyans Agency to build bespoke, conversion-focused websites that reflect your brand and turn visitors into clients. I handle everything personally — from custom responsive design, fast Australian hosting, and built-in SEO to ongoing maintenance and business lead automation. My process is collaborative and transparent, delivering projects on time, on brief, and on budget with no surprise bills.
               </p>
 
               <div className="flex flex-wrap gap-3 pt-2">
                 <div className="flex items-center gap-2 text-xs card px-3 py-1.5 rounded border border-white/10 text-foreground/80">
-                  <UserCheck className="size-4 text-white/80" /> Direct Communication
+                  <UserCheck className="size-4 text-white/80" /> Direct 1-on-1 Communication
                 </div>
                 <div className="flex items-center gap-2 text-xs card px-3 py-1.5 rounded border border-white/10 text-foreground/80">
-                  <Code2 className="size-4 text-white/80" /> Clean Custom Builds
+                  <Code2 className="size-4 text-white/80" /> Custom Responsive Design
                 </div>
                 <div className="flex items-center gap-2 text-xs card px-3 py-1.5 rounded border border-white/10 text-foreground/80">
-                  <Sparkles className="size-4 text-white/80" /> Automated Reviews
+                  <Server className="size-4 text-white/80" /> Managed Australian Hosting
+                </div>
+                <div className="flex items-center gap-2 text-xs card px-3 py-1.5 rounded border border-white/10 text-foreground/80">
+                  <ShieldCheck className="size-4 text-white/80" /> Post-Launch Support
                 </div>
               </div>
             </div>

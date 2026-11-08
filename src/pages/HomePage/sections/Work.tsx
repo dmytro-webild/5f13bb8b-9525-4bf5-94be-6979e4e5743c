@@ -35,7 +35,7 @@ export default function WorkSection(): React.JSX.Element {
             <div className="p-6 md:p-10 card rounded flex flex-col md:flex-row items-center gap-8 border border-white/10 hover:border-orange-500/30 transition-colors">
               <div className="w-full md:w-1/2 flex justify-center bg-black/40 p-8 rounded-xl border border-white/5">
                 <ImageOrVideo
-                  imageSrc="https://storage.googleapis.com/webild/users/user_3FwL5pfkeyOX14T98rYzVwLBGK9/uploaded-1794144853094-88vtnccl.png"
+                  imageSrc="https://storage.googleapis.com/webild/users/user_3FwL5pfkeyOX14T98rYzVwLBGK9/uploaded-1794144853094-88vtnccl.png?_wi=2"
                   className="max-h-64 object-contain brightness-0 invert"
                 />
               </div>

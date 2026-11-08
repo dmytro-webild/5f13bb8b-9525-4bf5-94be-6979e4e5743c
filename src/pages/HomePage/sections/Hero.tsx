@@ -3,17 +3,17 @@ import HeroSplit from "@/components/sections/hero/HeroSplit";
 
 export default function HeroSection(): React.JSX.Element {
   return (
-    <div id="hero" data-section="hero">
+    <div id="hero" data-section="hero" className="scroll-mt-24">
       <HeroSplit
         textAnimation="fade-blur"
-        tag="📍 Melbourne | Bespoke Web Design & Australian Hosting"
-        title="SEO-optimised websites built to rank higher on Google and get leads"
-        description="I combine strategic thinking with strong design to deliver custom websites that help Melbourne and Australian businesses rank higher on Google, get more leads, and turn visitors into clients."
+        tag="Melbourne · Web Design & Hosting"
+        title="SEO websites that rank higher and get you more leads"
+        description="I build custom websites for Melbourne and Australian businesses that help you show up on Google and turn visitors into clients."
         primaryButton={{ text: "Book a free consultation", href: "https://calendly.com/josiabatoni/30min" }}
         secondaryButton={{ text: "Explore services", href: "#services" }}
         imageSrc="https://storage.googleapis.com/webild/users/user_3FwL5pfkeyOX14T98rYzVwLBGK9/uploaded-1794144853094-88vtnccl.png?_wi=1"
         containerClassName="bg-transparent border-0 shadow-none p-0 overflow-visible"
-        imageClassName="object-contain w-full h-full max-h-[480px] rounded-none brightness-0 invert bg-transparent border-0 shadow-none drop-shadow-2xl"
+        imageClassName="object-contain w-auto h-auto max-h-24 sm:max-h-36 md:max-h-[380px] mx-auto rounded-none brightness-0 invert bg-transparent border-0 shadow-none drop-shadow-2xl"
       />
     </div>
   );

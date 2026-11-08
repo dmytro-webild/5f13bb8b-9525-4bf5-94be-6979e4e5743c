@@ -6,7 +6,7 @@ import { CheckCircle2 } from "lucide-react";
 
 export default function WorkSection(): React.JSX.Element {
   return (
-    <div id="work" data-section="work">
+    <div id="work" data-section="work" className="scroll-mt-24">
       <section aria-label="Work section" className="py-20">
         <div className="flex flex-col gap-8 md:gap-10 w-content-width mx-auto">
           <div className="flex flex-col items-center gap-2">

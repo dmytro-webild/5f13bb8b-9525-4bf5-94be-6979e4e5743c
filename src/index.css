@@ -3,6 +3,11 @@
 @import "./styles/masks.css";
 @import "./styles/animations.css";
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
 :root {
   /* Dark theme with white accents */
   --background: #0a0a0a;

@@ -29,12 +29,12 @@ const HeroSplit = ({
   containerClassName,
 }: HeroSplitProps) => {
   return (
-    <section aria-label="Hero section" className="relative flex items-center h-fit md:h-svh pt-25 pb-20 md:py-0">
+    <section aria-label="Hero section" className="relative flex items-center min-h-fit md:h-svh pt-28 pb-12 md:py-0">
       <HeroBackgroundSlot />
-      <div className="flex flex-col md:flex-row items-center gap-12 md:gap-20 w-content-width mx-auto">
+      <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16 w-content-width mx-auto">
         <div className="w-full md:w-1/2">
-          <div className="flex flex-col items-center md:items-start gap-3">
-            <div className="px-3 py-1 mb-1 text-sm card rounded w-fit">
+          <div className="flex flex-col items-center md:items-start gap-3.5">
+            <div className="px-3 py-1 mb-1 text-xs sm:text-sm card rounded w-fit">
               <p>{tag}</p>
             </div>
 
@@ -43,7 +43,7 @@ const HeroSplit = ({
               variant={textAnimation}
               gradientText={true}
               tag="h1"
-              className="text-7xl 2xl:text-8xl leading-[1.15] font-semibold text-center md:text-left text-balance"
+              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl 2xl:text-8xl leading-tight font-semibold text-center md:text-left text-balance max-w-2xl"
             />
 
             <TextAnimation
@@ -51,12 +51,12 @@ const HeroSplit = ({
               variant={textAnimation}
               gradientText={false}
               tag="p"
-              className="md:max-w-8/10 text-lg md:text-xl leading-snug text-center md:text-left text-balance"
+              className="md:max-w-8/10 text-base sm:text-lg md:text-xl leading-snug text-center md:text-left text-balance text-foreground/80"
             />
 
             <div className="flex flex-wrap max-md:justify-center gap-3 mt-2 md:mt-3">
               <Button text={primaryButton.text} href={primaryButton.href} variant="primary"/>
-              <Button text={secondaryButton.text} href={secondaryButton.href} variant="secondary"animationDelay={0.1} />
+              <Button text={secondaryButton.text} href={secondaryButton.href} variant="secondary" animationDelay={0.1} />
             </div>
           </div>
         </div>
@@ -65,7 +65,7 @@ const HeroSplit = ({
           variant="slide-up"
           delay={0.2}
           className={cls(
-            "w-full md:w-1/2 h-100 md:h-[65vh] md:max-h-[75svh] flex items-center justify-center",
+            "w-full md:w-1/2 flex items-center justify-center shrink-0 mt-2 md:mt-0",
             containerClassName ?? "p-4 xl:p-6 card rounded overflow-hidden"
           )}
         >

@@ -9,7 +9,7 @@ export default function TestimonialsSection(): React.JSX.Element {
     <div id="testimonials" data-section="testimonials">
               <TestimonialTrustCard
                 textAnimation="fade-blur"
-                quote="Figo completely transformed our online presence. The team delivered a stunning website that exceeded our expectations and doubled our conversion rate."
+                quote="Cyans Agency completely transformed our online presence. The team delivered a stunning website that exceeded our expectations and doubled our conversion rate."
                 rating={5}
                 author="— Sarah Mitchell, Local Business Owner"
                 avatars={[

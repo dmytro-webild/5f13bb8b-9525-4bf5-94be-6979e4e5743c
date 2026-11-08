@@ -3,7 +3,7 @@
 
 import React from 'react';
 import FeaturesBorderGlow from "@/components/sections/features/FeaturesBorderGlow";
-import { Monitor, Zap, Shield, ArrowUpRight, Code, Palette, Layers, PenTool, Sparkles } from "lucide-react";
+import { Monitor, Zap, Shield } from "lucide-react";
 
 export default function PromiseSection(): React.JSX.Element {
   return (
@@ -11,7 +11,7 @@ export default function PromiseSection(): React.JSX.Element {
               <FeaturesBorderGlow
                 textAnimation="fade-blur"
                 tag="Our Promise"
-                title="Why Brands Choose Webild"
+                title="Why Brands Choose Cyans Agency"
                 description="We deliver results that speak for themselves."
                 features={[
                   {

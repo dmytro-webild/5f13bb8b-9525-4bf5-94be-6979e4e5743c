@@ -215,19 +215,9 @@ export default function WebAgencyTemplate() {
             description="The creative minds behind your next project."
             members={[
               {
-                name: "Sarah Miller",
-                role: "Lead Developer",
-                imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/web-agency-2/team-1.webp",
-              },
-              {
-                name: "Valentina Reyes",
+                name: "Josia Batoni",
                 role: "Creative Director",
                 imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/web-agency-2/team-2.webp",
-              },
-              {
-                name: "Carlos Mendoza",
-                role: "UX Designer",
-                imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/web-agency-2/team-3.webp",
               },
             ]}
           />

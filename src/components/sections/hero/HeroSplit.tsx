@@ -3,6 +3,7 @@ import HeroBackgroundSlot from "@/components/ui/HeroBackgroundSlot";
 import TextAnimation from "@/components/ui/TextAnimation";
 import ImageOrVideo from "@/components/ui/ImageOrVideo";
 import ScrollReveal from "@/components/ui/ScrollReveal";
+import { cls } from "@/lib/utils";
 
 type HeroSplitProps = {
   tag: string;
@@ -12,6 +13,7 @@ type HeroSplitProps = {
   secondaryButton: { text: string; href: string };
   textAnimation: "slide-up" | "fade-blur" | "fade";
   imageClassName?: string;
+  containerClassName?: string;
 } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never });
 
 const HeroSplit = ({
@@ -24,6 +26,7 @@ const HeroSplit = ({
   videoSrc,
   textAnimation,
   imageClassName,
+  containerClassName,
 }: HeroSplitProps) => {
   return (
     <section aria-label="Hero section" className="relative flex items-center h-fit md:h-svh pt-25 pb-20 md:py-0">
@@ -58,7 +61,14 @@ const HeroSplit = ({
           </div>
         </div>
 
-        <ScrollReveal variant="slide-up" delay={0.2} className="w-full md:w-1/2 h-100 md:h-[65vh] md:max-h-[75svh] p-4 xl:p-6 card rounded overflow-hidden flex items-center justify-center">
+        <ScrollReveal
+          variant="slide-up"
+          delay={0.2}
+          className={cls(
+            "w-full md:w-1/2 h-100 md:h-[65vh] md:max-h-[75svh] flex items-center justify-center",
+            containerClassName ?? "p-4 xl:p-6 card rounded overflow-hidden"
+          )}
+        >
           <ImageOrVideo imageSrc={imageSrc} videoSrc={videoSrc} className={imageClassName} />
         </ScrollReveal>
       </div>

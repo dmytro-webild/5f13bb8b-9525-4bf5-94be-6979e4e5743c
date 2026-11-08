@@ -17,16 +17,17 @@ export default function Layout() {
                       alt="Cyans Agency Logo"
                       className="h-7 w-auto object-contain mix-blend-screen"
                     />
-                    <span>Cyans Agency</span>
+                    <span className="font-semibold text-cream">Cyans Agency</span>
                   </span>
                 }
                 navItems={[
                   { name: "Services", href: "#services" },
+                  { name: "Process", href: "#process" },
                   { name: "Work", href: "#work" },
-                  { name: "Team", href: "#team" },
+                  { name: "About", href: "#team" },
                   { name: "Contact", href: "#contact" },
                 ]}
-                ctaButton={{ text: "Start Project", href: "#contact" }}
+                ctaButton={{ text: "Book Consultation", href: "#contact" }}
               />
       <main className="flex-grow">
         <Outlet />
@@ -35,34 +36,25 @@ export default function Layout() {
                 brand="Cyans Agency"
                 columns={[
                   {
-                    title: "Company",
+                    title: "Navigation",
                     items: [
-                      { label: "About", href: "#" },
                       { label: "Services", href: "#services" },
+                      { label: "Process", href: "#process" },
                       { label: "Work", href: "#work" },
+                      { label: "About", href: "#team" },
                       { label: "Contact", href: "#contact" },
                     ],
                   },
                   {
                     title: "Services",
                     items: [
-                      { label: "Web Development", href: "#" },
-                      { label: "SEO", href: "#" },
-                      { label: "Branding", href: "#" },
-                      { label: "UI/UX Design", href: "#" },
-                    ],
-                  },
-                  {
-                    title: "Connect",
-                    items: [
-                      { label: "Twitter", href: "#" },
-                      { label: "LinkedIn", href: "#" },
-                      { label: "Instagram", href: "#" },
-                      { label: "Dribbble", href: "#" },
+                      { label: "Websites", href: "#services" },
+                      { label: "Google Reviews", href: "#services" },
+                      { label: "Lead Follow-up & Automation", href: "#services" },
                     ],
                   },
                 ]}
-                copyright="© 2026 Cyans Agency. All rights reserved."
+                copyright="© 2026 Cyans Agency. All rights reserved. Melbourne, Australia."
                 links={[
                   { label: "Privacy Policy", href: "#" },
                   { label: "Terms of Service", href: "#" },

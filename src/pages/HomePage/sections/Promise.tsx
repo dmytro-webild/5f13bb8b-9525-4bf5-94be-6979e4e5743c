@@ -8,13 +8,13 @@ export default function ProcessSection(): React.JSX.Element {
       <FeaturesBorderGlow
         textAnimation="fade-blur"
         tag="How It Works"
-        title="Our Simple 4-Step Process"
+        title="Simple 4-Step Process"
         description="Clear, honest, and straightforward execution from start to finish."
         features={[
           {
             icon: PhoneCall,
             title: "1. Quick call",
-            description: "We figure out what the business needs, your current setup, and your lead goals.",
+            description: "I figure out what your business needs, your current setup, and your lead goals.",
           },
           {
             icon: Palette,
@@ -29,7 +29,7 @@ export default function ProcessSection(): React.JSX.Element {
           {
             icon: Star,
             title: "4. Reviews & follow-up",
-            description: "We set up the automated system that asks happy customers for Google reviews and follows up on missed leads.",
+            description: "I set up the automated system that asks happy customers for Google reviews and follows up on missed leads.",
           },
         ]}
       />

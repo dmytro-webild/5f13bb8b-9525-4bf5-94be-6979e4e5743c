@@ -1,75 +1,58 @@
-import { useEffect } from "react";
+import React from "react";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 import TextAnimation from "@/components/ui/TextAnimation";
-import { Calendar, MapPin, Sparkles } from "lucide-react";
+import Button from "@/components/ui/Button";
+import { Mail, Calendar, MapPin } from "lucide-react";
 
-const ContactSection = () => {
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://link.msgsndr.com/js/form_embed.js";
-    script.type = "text/javascript";
-    script.async = true;
-    document.body.appendChild(script);
-
-    return () => {
-      if (document.body.contains(script)) {
-        document.body.removeChild(script);
-      }
-    };
-  }, []);
-
+export default function ContactSection(): React.JSX.Element {
   return (
     <div data-webild-section="contact" data-section="contact" id="contact">
       <section aria-label="Contact and Booking section" className="py-20">
         <div className="w-content-width mx-auto flex flex-col gap-8 md:gap-10">
           <div className="flex flex-col items-center gap-2">
             <div className="px-3 py-1 mb-1 text-sm card rounded w-fit text-orange-400 border-orange-500/20">
-              <p>{"Book a Consultation"}</p>
+              <p>{"Contact"}</p>
             </div>
 
             <TextAnimation
-              text={"Ready for More Leads & 5-Star Reviews?"}
+              text={"Ready to get more clients from your website and Google reviews?"}
               variant={"fade-blur"}
               gradientText={true}
               tag="h2"
               className="md:max-w-8/10 text-5xl md:text-6xl 2xl:text-7xl leading-[1.15] font-semibold text-center text-balance"
             />
-
-            <TextAnimation
-              text={"Book a free consultation with founder Josia Batoni to discuss your website and review setup."}
-              variant={"fade-blur"}
-              gradientText={false}
-              tag="p"
-              className="md:max-w-7/10 text-lg md:text-xl leading-snug text-center text-balance text-foreground/80"
-            />
-
-            <div className="flex flex-wrap items-center justify-center gap-4 text-xs text-foreground/70 pt-2">
-              <span className="flex items-center gap-1.5"><MapPin className="size-3.5 text-orange-400" /> Melbourne, VIC</span>
-              <span className="flex items-center gap-1.5"><Calendar className="size-3.5 text-orange-400" /> Free 30-min strategy session</span>
-              <span className="flex items-center gap-1.5"><Sparkles className="size-3.5 text-orange-400" /> No high-pressure sales</span>
-            </div>
           </div>
 
-          <ScrollReveal variant="slide-up" className="p-4 md:p-8 card rounded border border-white/10 overflow-hidden">
-            <div className="w-full min-h-[650px] flex items-center justify-center">
-              <iframe
-                src="https://api.leadconnectorhq.com/widget/booking/r9TebD9ETWLcafdipYxW"
-                style={{ width: "100%", border: "none", overflow: "hidden", minHeight: "650px" }}
-                scrolling="no"
-                id="r9TebD9ETWLcafdipYxW_1783044176238"
-                title="Book Consultation with Josia Batoni"
-              ></iframe>
-            </div>
-            <div className="text-center pt-4 border-t border-white/5">
-              <p className="text-sm text-foreground/60">
-                Having trouble with the widget? <a href="https://calendly.com/josiabatoni/30min" target="_blank" rel="noopener noreferrer" className="text-orange-400 hover:underline">Click here to open booking calendar directly</a>.
-              </p>
+          <ScrollReveal variant="slide-up">
+            <div className="p-8 md:p-12 card rounded flex flex-col items-center gap-8 text-center border border-white/10 hover:border-orange-500/30 transition-colors max-w-3xl mx-auto w-full">
+              <div className="flex flex-col items-center gap-4">
+                <Button
+                  text="Book a free consultation"
+                  href="https://calendly.com/josiabatoni/30min"
+                  variant="primary"
+                />
+
+                <div className="flex flex-col items-center gap-1.5 pt-4">
+                  <span className="text-sm text-foreground/70 flex items-center gap-2 font-medium">
+                    <Mail className="size-4 text-orange-400" /> Direct Email
+                  </span>
+                  <a
+                    href="mailto:hello@cyansagency.com.au"
+                    className="text-xl md:text-2xl font-semibold text-cream hover:text-orange-400 transition-colors underline decoration-orange-500/40 underline-offset-4"
+                  >
+                    hello@cyansagency.com.au
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex flex-wrap items-center justify-center gap-4 text-xs text-foreground/70 pt-4 border-t border-white/10 w-full">
+                <span className="flex items-center gap-1.5"><MapPin className="size-3.5 text-orange-400" /> Melbourne, VIC, Australia</span>
+                <span className="flex items-center gap-1.5"><Calendar className="size-3.5 text-orange-400" /> Free consultation call</span>
+              </div>
             </div>
           </ScrollReveal>
         </div>
       </section>
     </div>
   );
-};
-
-export default ContactSection;
+}

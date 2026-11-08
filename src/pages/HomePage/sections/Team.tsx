@@ -22,7 +22,7 @@ export default function TeamSection(): React.JSX.Element {
             />
 
             <TextAnimation
-              text={"No account managers, no offshore outsourcing — you work directly with the founder."}
+              text={"No account managers, no offshore outsourcing — you work directly with me."}
               variant={"fade-blur"}
               gradientText={false}
               tag="p"
@@ -31,40 +31,28 @@ export default function TeamSection(): React.JSX.Element {
           </div>
 
           <ScrollReveal variant="slide-up">
-            <div className="p-8 md:p-12 card rounded flex flex-col md:flex-row items-center gap-8 md:gap-12 border border-white/10 hover:border-orange-500/30 transition-colors">
-              <div className="size-36 md:size-44 rounded-full primary-button flex items-center justify-center shrink-0 border-4 border-orange-500/20 shadow-xl">
-                <div className="text-center">
-                  <span className="text-4xl font-extrabold text-white">JB</span>
-                  <p className="text-xs text-white/90 font-medium">Josia Batoni</p>
+            <div className="p-8 md:p-12 card rounded flex flex-col items-start gap-6 border border-white/10 hover:border-orange-500/30 transition-colors">
+              <div className="flex flex-col gap-2">
+                <div className="inline-flex items-center gap-2 text-sm font-medium text-orange-400">
+                  <MapPin className="size-4" /> Melbourne, Australia
                 </div>
+                <h3 className="text-3xl font-bold text-cream">Josia Batoni</h3>
+                <p className="text-sm font-semibold text-orange-400">Founder, Cyans Agency</p>
               </div>
 
-              <div className="flex flex-col gap-4 text-center md:text-left">
-                <div>
-                  <div className="inline-flex items-center gap-2 text-sm font-medium text-orange-400 mb-1">
-                    <MapPin className="size-4" /> Based in Melbourne, Australia
-                  </div>
-                  <h3 className="text-3xl font-bold text-cream">Josia Batoni</h3>
-                  <p className="text-sm font-semibold text-orange-400">Founder, Cyans Agency</p>
+              <p className="text-lg text-foreground/90 leading-relaxed max-w-3xl">
+                I’m Josia, a sole trader based in Melbourne. I started Cyan’s Agency to help local businesses get a website they’re proud of and more Google reviews, so they can book more clients.
+              </p>
+
+              <div className="flex flex-wrap gap-3 pt-2">
+                <div className="flex items-center gap-2 text-xs card px-3 py-1.5 rounded border border-white/10 text-foreground/80">
+                  <UserCheck className="size-4 text-orange-400" /> Direct Communication
                 </div>
-
-                <p className="text-base text-foreground/85 leading-relaxed">
-                  Hi, I&apos;m Josia. I run Cyans Agency as a sole trader in Melbourne. I partner directly with local business owners to build modern, high-performing websites and set up automated systems that earn genuine 5-star Google reviews.
-                </p>
-                <p className="text-base text-foreground/85 leading-relaxed">
-                  My goal is straightforward: help your business show up better online, convert more website visitors into inquiries, and make sure missed calls turn into booked appointments.
-                </p>
-
-                <div className="flex flex-wrap gap-3 pt-2 justify-center md:justify-start">
-                  <div className="flex items-center gap-2 text-xs card px-3 py-1.5 rounded border border-white/10 text-foreground/80">
-                    <UserCheck className="size-4 text-orange-400" /> Direct Communication
-                  </div>
-                  <div className="flex items-center gap-2 text-xs card px-3 py-1.5 rounded border border-white/10 text-foreground/80">
-                    <Code2 className="size-4 text-orange-400" /> Clean Custom Builds
-                  </div>
-                  <div className="flex items-center gap-2 text-xs card px-3 py-1.5 rounded border border-white/10 text-foreground/80">
-                    <Sparkles className="size-4 text-orange-400" /> Automated Reviews
-                  </div>
+                <div className="flex items-center gap-2 text-xs card px-3 py-1.5 rounded border border-white/10 text-foreground/80">
+                  <Code2 className="size-4 text-orange-400" /> Clean Custom Builds
+                </div>
+                <div className="flex items-center gap-2 text-xs card px-3 py-1.5 rounded border border-white/10 text-foreground/80">
+                  <Sparkles className="size-4 text-orange-400" /> Automated Reviews
                 </div>
               </div>
             </div>

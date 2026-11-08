@@ -85,16 +85,16 @@ const FooterSimpleReveal = ({
           data-section="footer"
           ref={footerRef}
           aria-label="Site footer"
-          className="w-full py-10 md:py-15 primary-button text-primary-cta-text"
+          className="w-full py-15 primary-button text-primary-cta-text"
         >
           <div className="w-content-width mx-auto">
-            <div className="flex flex-col md:flex-row gap-8 md:gap-0 justify-between items-start mb-8 md:mb-10">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold">{brand}</h2>
+            <div className="flex flex-col md:flex-row gap-10 md:gap-0 justify-between items-start mb-10">
+              <h2 className="text-4xl font-semibold">{brand}</h2>
 
-              <div className="w-full md:w-fit flex flex-wrap gap-y-8 md:gap-12">
+              <div className="w-full md:w-fit flex flex-wrap gap-y-10 md:gap-12">
                 {columns.map((column) => (
-                  <div key={column.title} className="w-1/2 md:w-auto flex flex-col items-start gap-2.5">
-                    <h3 className="text-xs sm:text-sm font-semibold opacity-60 uppercase tracking-wider">{column.title}</h3>
+                  <div key={column.title} className="w-1/2 md:w-auto flex flex-col items-start gap-3">
+                    <h3 className="text-sm opacity-50 truncate">{column.title}</h3>
                     {column.items.map((item) => (
                       <FooterLinkItem key={item.label} label={item.label} href={item.href} onClick={item.onClick} />
                     ))}
@@ -103,9 +103,9 @@ const FooterSimpleReveal = ({
               </div>
             </div>
 
-            <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-6 md:pt-8 border-t border-primary-cta-text/20 text-center sm:text-left">
-              <span className="text-xs sm:text-sm opacity-60">{copyright}</span>
-              <div className="flex flex-wrap items-center justify-center gap-4">
+            <div className="flex items-center justify-between pt-8 border-t border-primary-cta-text/20">
+              <span className="text-sm opacity-50">{copyright}</span>
+              <div className="flex items-center gap-3">
                 {links.map((link) => (
                   <FooterBottomLink key={link.label} label={link.label} href={link.href} onClick={link.onClick} />
                 ))}

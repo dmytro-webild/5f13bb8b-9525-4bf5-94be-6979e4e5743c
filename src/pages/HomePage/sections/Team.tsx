@@ -9,7 +9,7 @@ export default function TeamSection(): React.JSX.Element {
       <section aria-label="About section" className="py-20">
         <div className="flex flex-col gap-8 md:gap-10 w-content-width mx-auto">
           <div className="flex flex-col items-center gap-2">
-            <div className="px-3 py-1 mb-1 text-sm card rounded w-fit text-orange-400 border-orange-500/20">
+            <div className="px-3 py-1 mb-1 text-sm card rounded w-fit text-white/80 border-white/20">
               <p>{"About Cyans Agency"}</p>
             </div>
 
@@ -31,13 +31,13 @@ export default function TeamSection(): React.JSX.Element {
           </div>
 
           <ScrollReveal variant="slide-up">
-            <div className="p-8 md:p-12 card rounded flex flex-col items-start gap-6 border border-white/10 hover:border-orange-500/30 transition-colors">
+            <div className="p-8 md:p-12 card rounded flex flex-col items-start gap-6 border border-white/10 hover:border-white/30 transition-colors">
               <div className="flex flex-col gap-2">
-                <div className="inline-flex items-center gap-2 text-sm font-medium text-orange-400">
+                <div className="inline-flex items-center gap-2 text-sm font-medium text-white/80">
                   <MapPin className="size-4" /> Melbourne, Australia
                 </div>
                 <h3 className="text-3xl font-bold text-cream">Josia Batoni</h3>
-                <p className="text-sm font-semibold text-orange-400">Founder, Cyans Agency</p>
+                <p className="text-sm font-semibold text-white/70">Founder, Cyans Agency</p>
               </div>
 
               <p className="text-lg text-foreground/90 leading-relaxed max-w-3xl">
@@ -46,13 +46,13 @@ export default function TeamSection(): React.JSX.Element {
 
               <div className="flex flex-wrap gap-3 pt-2">
                 <div className="flex items-center gap-2 text-xs card px-3 py-1.5 rounded border border-white/10 text-foreground/80">
-                  <UserCheck className="size-4 text-orange-400" /> Direct Communication
+                  <UserCheck className="size-4 text-white/80" /> Direct Communication
                 </div>
                 <div className="flex items-center gap-2 text-xs card px-3 py-1.5 rounded border border-white/10 text-foreground/80">
-                  <Code2 className="size-4 text-orange-400" /> Clean Custom Builds
+                  <Code2 className="size-4 text-white/80" /> Clean Custom Builds
                 </div>
                 <div className="flex items-center gap-2 text-xs card px-3 py-1.5 rounded border border-white/10 text-foreground/80">
-                  <Sparkles className="size-4 text-orange-400" /> Automated Reviews
+                  <Sparkles className="size-4 text-white/80" /> Automated Reviews
                 </div>
               </div>
             </div>

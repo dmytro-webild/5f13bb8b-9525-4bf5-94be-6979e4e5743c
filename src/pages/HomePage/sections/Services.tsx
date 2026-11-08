@@ -71,7 +71,7 @@ const ServicesInline = () => (
   <section aria-label="Services section" className="py-20">
     <div className="flex flex-col gap-8 md:gap-10">
       <div className="flex flex-col items-center w-content-width mx-auto gap-2">
-        <div className="px-3 py-1 mb-1 text-sm card rounded w-fit text-orange-400 border-orange-500/20">
+        <div className="px-3 py-1 mb-1 text-sm card rounded w-fit text-white/80 border-white/20">
           <p>{"Services"}</p>
         </div>
 
@@ -94,7 +94,7 @@ const ServicesInline = () => (
       <ScrollReveal variant="slide-up">
         <GridOrCarousel>
           {features.map((feature) => (
-            <div key={feature.title} className="flex flex-col gap-3 xl:gap-3.5 2xl:gap-4 p-4 card rounded h-full border border-white/10 hover:border-orange-500/30 transition-colors">
+            <div key={feature.title} className="flex flex-col gap-3 xl:gap-3.5 2xl:gap-4 p-4 card rounded h-full border border-white/10 hover:border-white/30 transition-colors">
               <div className="relative h-64 overflow-hidden rounded p-3 bg-foreground/5 shadow-inner">{getBentoComponent(feature)}</div>
               <div className="flex flex-col gap-1.5 p-3">
                 <h3 className="text-2xl font-semibold leading-snug text-cream">{feature.title}</h3>

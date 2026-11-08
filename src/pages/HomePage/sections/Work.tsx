@@ -10,7 +10,7 @@ export default function WorkSection(): React.JSX.Element {
       <section aria-label="Work section" className="py-20">
         <div className="flex flex-col gap-8 md:gap-10 w-content-width mx-auto">
           <div className="flex flex-col items-center gap-2">
-            <div className="px-3 py-1 mb-1 text-sm card rounded w-fit text-orange-400 border-orange-500/20">
+            <div className="px-3 py-1 mb-1 text-sm card rounded w-fit text-white/80 border-white/20">
               <p>{"Work"}</p>
             </div>
 
@@ -32,7 +32,7 @@ export default function WorkSection(): React.JSX.Element {
           </div>
 
           <ScrollReveal variant="slide-up">
-            <div className="p-6 md:p-10 card rounded flex flex-col md:flex-row items-center gap-8 border border-white/10 hover:border-orange-500/30 transition-colors">
+            <div className="p-6 md:p-10 card rounded flex flex-col md:flex-row items-center gap-8 border border-white/10 hover:border-white/30 transition-colors">
               <div className="w-full md:w-1/2 flex justify-center bg-black/40 p-8 rounded-xl border border-white/5">
                 <ImageOrVideo
                   imageSrc="https://storage.googleapis.com/webild/users/user_3FwL5pfkeyOX14T98rYzVwLBGK9/uploaded-1794144853094-88vtnccl.png?_wi=2"
@@ -41,7 +41,7 @@ export default function WorkSection(): React.JSX.Element {
               </div>
 
               <div className="w-full md:w-1/2 flex flex-col gap-4">
-                <div className="inline-flex items-center gap-2 text-xs font-semibold px-3 py-1 rounded-full bg-orange-500/10 text-orange-400 border border-orange-500/20 w-fit">
+                <div className="inline-flex items-center gap-2 text-xs font-semibold px-3 py-1 rounded-full bg-white/10 text-white border border-white/20 w-fit">
                   <CheckCircle2 className="size-3.5" /> Live Showcase Site
                 </div>
                 <h3 className="text-3xl font-bold text-cream">Cyans Agency Website</h3>

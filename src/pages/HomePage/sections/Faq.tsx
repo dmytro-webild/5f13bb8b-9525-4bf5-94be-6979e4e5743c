@@ -3,7 +3,7 @@ import FaqSimple from "@/components/sections/faq/FaqSimple";
 
 export default function FaqSection(): React.JSX.Element {
   return (
-    <div id="faq" data-section="faq">
+    <div id="faq" data-section="faq" className="scroll-mt-24">
       <FaqSimple
         textAnimation="fade-blur"
         tag="FAQ"
@@ -20,11 +20,11 @@ export default function FaqSection(): React.JSX.Element {
           },
           {
             question: "How does hosting and maintenance work?",
-            answer: "I provide managed Australian hosting featuring low latency, 99.9% uptime, free SSL, daily backups, CMS updates, security monitoring, and post-launch support.",
+            answer: "I provide managed Australian hosting featuring low latency, reliable server infrastructure, free SSL, daily backups, CMS updates, security monitoring, and post-launch support.",
           },
           {
             question: "Do you offer SEO and growth add-ons?",
-            answer: "Yes. All websites come with built-in on-page SEO structure and meta tags from day one. I also offer growth add-ons like business automation (lead capture to CRM workflows) and engagement tools (missed-call text-back and chatbots).",
+            answer: "Yes. All websites come with built-in on-page SEO structure and meta tags from day one. I also offer growth add-ons like Google review collection systems, business automation (lead capture to CRM workflows), and engagement tools (missed-call text-back and chatbots).",
           },
           {
             question: "How does pricing work?",

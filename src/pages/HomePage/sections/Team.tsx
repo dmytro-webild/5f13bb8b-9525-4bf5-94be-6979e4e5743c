@@ -6,7 +6,7 @@ import { MapPin, Layout, Server, Tag, Headphones } from "lucide-react";
 
 export default function TeamSection(): React.JSX.Element {
   return (
-    <div id="about" data-section="about" data-webild-section="about">
+    <div id="about" data-section="about" data-webild-section="about" className="scroll-mt-24">
       <section aria-label="About section" className="py-20">
         <div className="flex flex-col gap-8 md:gap-10 w-content-width mx-auto">
           <div className="flex flex-col items-center gap-2">

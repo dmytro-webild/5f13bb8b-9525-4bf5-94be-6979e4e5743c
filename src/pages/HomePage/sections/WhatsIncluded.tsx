@@ -16,17 +16,17 @@ const includedItems = [
   },
   {
     icon: Server,
-    title: "Fast & Secure Australian Hosting",
-    description: "Managed local Australian hosting featuring low latency, 99.9% uptime, free SSL, and daily backups."
+    title: "Reliable Australian Hosting",
+    description: "Managed local Australian hosting featuring low latency, reliable server infrastructure, free SSL, and daily backups."
   },
   {
     icon: Sparkles,
     title: "Conversion-Focused Layouts",
-    description: "Strategic user experience and clear call-to-actions designed to convert site visitors into clients."
+    description: "Strategic user experience, clear call-to-actions, and Google review integration designed to convert visitors into clients."
   },
   {
     icon: LineChart,
-    title: "Tracking Setup",
+    title: "Tracking & Analytics",
     description: "Google Analytics and performance tracking configured to give you full visibility into website traffic."
   },
   {
@@ -38,7 +38,7 @@ const includedItems = [
 
 export default function WhatsIncludedSection(): React.JSX.Element {
   return (
-    <div id="whats-included" data-section="whats-included">
+    <div id="whats-included" data-section="whats-included" className="scroll-mt-24">
       <section aria-label="What's Included section" className="py-20">
         <div className="flex flex-col gap-8 md:gap-10 w-content-width mx-auto">
           <div className="flex flex-col items-center gap-2">
@@ -51,7 +51,7 @@ export default function WhatsIncludedSection(): React.JSX.Element {
               variant={"fade-blur"}
               gradientText={true}
               tag="h2"
-              className="md:max-w-8/10 text-5xl md:text-6xl 2xl:text-7xl leading-[1.15] font-semibold text-center text-balance"
+              className="md:max-w-8/10 text-4xl sm:text-5xl md:text-6xl 2xl:text-7xl leading-[1.15] font-semibold text-center text-balance"
             />
 
             <TextAnimation
@@ -59,7 +59,7 @@ export default function WhatsIncludedSection(): React.JSX.Element {
               variant={"fade-blur"}
               gradientText={false}
               tag="p"
-              className="md:max-w-7/10 text-lg md:text-xl leading-snug text-center text-balance text-foreground/80"
+              className="md:max-w-7/10 text-base sm:text-lg md:text-xl leading-snug text-center text-balance text-foreground/80"
             />
           </div>
 

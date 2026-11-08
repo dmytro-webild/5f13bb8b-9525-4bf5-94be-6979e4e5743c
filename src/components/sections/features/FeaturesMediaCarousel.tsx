@@ -29,20 +29,20 @@ const FeatureMediaCarouselCard = ({ item }: { item: FeatureItem }) => {
   const Icon = resolveIcon(item.buttonIcon);
 
   return (
-    <div className="relative overflow-hidden aspect-4/3 sm:aspect-square md:aspect-3/2 rounded-2xl md:rounded">
-      <ImageOrVideo imageSrc={item.imageSrc} videoSrc={item.videoSrc} className="absolute inset-0 object-cover w-full h-full" />
-      <div className="absolute inset-x-3 bottom-3 xl:inset-x-5 xl:bottom-5 2xl:inset-x-6 2xl:bottom-6 flex items-center justify-between gap-3 p-3.5 xl:p-5 2xl:p-6 card rounded-xl md:rounded backdrop-blur-md">
-        <div className="flex flex-col gap-0.5 min-w-0">
-          <h3 className="text-lg md:text-2xl font-semibold leading-snug truncate">{item.title}</h3>
-          <p className="text-xs md:text-base leading-snug truncate opacity-85">{item.description}</p>
+    <div className="relative overflow-hidden aspect-square md:aspect-3/2 rounded">
+      <ImageOrVideo imageSrc={item.imageSrc} videoSrc={item.videoSrc} className="absolute inset-0" />
+      <div className="absolute inset-x-4 bottom-4 xl:inset-x-5 xl:bottom-5 2xl:inset-x-6 2xl:bottom-6 flex items-center justify-between gap-5 p-4 xl:p-5 2xl:p-6 card rounded backdrop-blur-sm">
+        <div className="flex flex-col gap-1 min-w-0">
+          <h3 className="text-2xl font-semibold leading-snug truncate">{item.title}</h3>
+          <p className="text-base leading-snug truncate">{item.description}</p>
         </div>
         <a
           href={item.buttonHref}
           onClick={handleClick}
           aria-label="View more"
-          className="flex items-center justify-center shrink-0 size-8 md:size-9 cursor-pointer primary-button rounded-full"
+          className="flex items-center justify-center shrink-0 size-9 cursor-pointer primary-button rounded-full"
         >
-          <Icon className="size-3.5 md:size-4 text-primary-cta-text" strokeWidth={2} />
+          <Icon className="size-4 text-primary-cta-text" strokeWidth={2} />
         </a>
       </div>
     </div>
@@ -59,10 +59,10 @@ const FeaturesMediaCarousel = ({
   textAnimation,
 }: FeaturesMediaCarouselProps) => {
   return (
-    <section aria-label="Features section" className="w-full py-12 md:py-20">
-      <div className="flex flex-col w-full gap-6 md:gap-10">
+    <section aria-label="Features section" className="w-full py-20">
+      <div className="flex flex-col w-full gap-8 md:gap-10">
         <div className="flex flex-col items-center w-content-width mx-auto gap-2">
-          <div className="px-3 py-1 mb-1 text-xs md:text-sm card rounded-full w-fit">
+          <div className="px-3 py-1 mb-1 text-sm card rounded w-fit">
             <p>{tag}</p>
           </div>
 
@@ -71,7 +71,7 @@ const FeaturesMediaCarousel = ({
             variant={textAnimation}
             gradientText={true}
             tag="h2"
-            className="md:max-w-8/10 text-3xl sm:text-5xl md:text-6xl 2xl:text-7xl leading-[1.15] font-semibold text-center text-balance"
+            className="md:max-w-8/10 text-6xl 2xl:text-7xl leading-[1.15] font-semibold text-center text-balance"
           />
 
           <TextAnimation
@@ -79,13 +79,13 @@ const FeaturesMediaCarousel = ({
             variant={textAnimation}
             gradientText={false}
             tag="p"
-            className="md:max-w-7/10 text-base md:text-xl leading-snug text-center text-balance opacity-90"
+            className="md:max-w-7/10 text-lg md:text-xl leading-snug text-center text-balance"
           />
 
           {(primaryButton || secondaryButton) && (
-            <div className="flex flex-col sm:flex-row w-full sm:w-auto justify-center gap-3 mt-2 md:mt-3">
-              {primaryButton && <Button text={primaryButton.text} href={primaryButton.href} variant="primary" className="w-full sm:w-auto text-center"/>}
-              {secondaryButton && <Button text={secondaryButton.text} href={secondaryButton.href} variant="secondary" animationDelay={0.1} className="w-full sm:w-auto text-center"/>}
+            <div className="flex flex-wrap justify-center gap-3 mt-2 md:mt-3">
+              {primaryButton && <Button text={primaryButton.text} href={primaryButton.href} variant="primary"/>}
+              {secondaryButton && <Button text={secondaryButton.text} href={secondaryButton.href} variant="secondary"animationDelay={0.1} />}
             </div>
           )}
         </div>

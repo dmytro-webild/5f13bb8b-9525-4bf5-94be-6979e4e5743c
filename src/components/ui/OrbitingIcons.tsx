@@ -8,7 +8,7 @@ const OrbitingIcons = ({ centerIcon, items }: { centerIcon: string | LucideIcon;
     className="relative flex items-center justify-center h-full overflow-hidden"
     style={{ perspective: "2000px", maskImage: "linear-gradient(to bottom, transparent, black 10%, black 90%, transparent), linear-gradient(to right, transparent, black 10%, black 90%, transparent)", maskComposite: "intersect" }}
   >
-    <div className="flex items-center justify-center w-full h-full scale-75 sm:scale-90 md:scale-100 transition-transform" style={{ transform: "rotateY(20deg) rotateX(20deg) rotateZ(-20deg)" }}>
+    <div className="flex items-center justify-center w-full h-full" style={{ transform: "rotateY(20deg) rotateX(20deg) rotateZ(-20deg)" }}>
       <div className="absolute size-60 opacity-85 border border-background-accent shadow rounded-full" />
       <div className="absolute size-80 opacity-75 border border-background-accent shadow rounded-full" />
       <div className="absolute size-100 opacity-65 border border-background-accent shadow rounded-full" />

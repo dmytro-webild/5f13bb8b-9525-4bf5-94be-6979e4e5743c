@@ -7,9 +7,9 @@ export default function HeroSection(): React.JSX.Element {
       <HeroSplit
         textAnimation="fade-blur"
         tag="📍 Melbourne | Bespoke Web Design & Australian Hosting"
-        title="Conversion-focused websites built to turn visitors into clients"
-        description="I build custom responsive websites with built-in SEO, managed Australian hosting, ongoing maintenance, and lead automation for local businesses."
-        primaryButton={{ text: "Book a free consultation", href: "#contact" }}
+        title="SEO-optimised websites built to rank higher on Google and get leads"
+        description="I combine strategic thinking with strong design to deliver custom websites that help Melbourne and Australian businesses rank higher on Google, get more leads, and turn visitors into clients."
+        primaryButton={{ text: "Book a free consultation", href: "https://calendly.com/josiabatoni/30min" }}
         secondaryButton={{ text: "Explore services", href: "#services" }}
         imageSrc="https://storage.googleapis.com/webild/users/user_3FwL5pfkeyOX14T98rYzVwLBGK9/uploaded-1794144853094-88vtnccl.png?_wi=1"
         containerClassName="bg-transparent border-0 shadow-none p-0 overflow-visible"

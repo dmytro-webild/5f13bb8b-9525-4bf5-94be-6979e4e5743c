@@ -1,16 +1,17 @@
 import React from 'react';
 import TextAnimation from "@/components/ui/TextAnimation";
 import ScrollReveal from "@/components/ui/ScrollReveal";
-import { UserCheck, MapPin, ShieldCheck, Code2, Server } from "lucide-react";
+import Button from "@/components/ui/Button";
+import { MapPin, Layout, Server, Tag, Headphones } from "lucide-react";
 
 export default function TeamSection(): React.JSX.Element {
   return (
-    <div id="team" data-section="team">
+    <div id="about" data-section="about" data-webild-section="about">
       <section aria-label="About section" className="py-20">
         <div className="flex flex-col gap-8 md:gap-10 w-content-width mx-auto">
           <div className="flex flex-col items-center gap-2">
             <div className="px-3 py-1 mb-1 text-sm card rounded w-fit text-white/80 border-white/20">
-              <p>{"About Cyans Agency"}</p>
+              <p>{"About Cyan’s Agency"}</p>
             </div>
 
             <TextAnimation
@@ -31,32 +32,44 @@ export default function TeamSection(): React.JSX.Element {
           </div>
 
           <ScrollReveal variant="slide-up">
-            <div className="p-8 md:p-12 card rounded flex flex-col items-start gap-6 border border-white/10 hover:border-white/30 transition-colors">
+            <div className="p-8 md:p-12 card rounded flex flex-col items-start gap-8 border border-white/10 hover:border-white/30 transition-colors max-w-4xl mx-auto w-full">
               <div className="flex flex-col gap-2">
                 <div className="inline-flex items-center gap-2 text-sm font-medium text-white/80">
                   <MapPin className="size-4" /> Melbourne, Australia
                 </div>
                 <h3 className="text-3xl font-bold text-cream">Josia Batoni</h3>
-                <p className="text-sm font-semibold text-white/70">Founder, Cyans Agency</p>
+                <p className="text-sm font-semibold text-white/70">Founder, Cyan’s Agency</p>
               </div>
 
-              <p className="text-lg text-foreground/90 leading-relaxed max-w-3xl">
-                I’m Josia, a sole trader based in Melbourne. I started Cyans Agency to build bespoke, conversion-focused websites that reflect your brand and turn visitors into clients. I handle everything personally — from custom responsive design, fast Australian hosting, and built-in SEO to ongoing maintenance and business lead automation. My process is collaborative and transparent, delivering projects on time, on brief, and on budget with no surprise bills.
+              <p className="text-lg text-foreground/90 leading-relaxed">
+                I’m Josia Batoni, Founder of Cyan’s Agency, a sole trader in Melbourne. A great website is one of the most powerful tools a business can have. I don’t just make things look good — I make them work. Every project starts with understanding your customers, your competitors and your goals. I combine strategic thinking with strong design to deliver websites that help you rank higher on Google and get more leads.
               </p>
 
-              <div className="flex flex-wrap gap-3 pt-2">
-                <div className="flex items-center gap-2 text-xs card px-3 py-1.5 rounded border border-white/10 text-foreground/80">
-                  <UserCheck className="size-4 text-white/80" /> Direct 1-on-1 Communication
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 w-full pt-2">
+                <div className="flex items-center gap-3 text-sm card px-4 py-3 rounded border border-white/10 text-foreground/90">
+                  <Layout className="size-4 text-white/80 shrink-0" />
+                  <span>Conversion-first design</span>
                 </div>
-                <div className="flex items-center gap-2 text-xs card px-3 py-1.5 rounded border border-white/10 text-foreground/80">
-                  <Code2 className="size-4 text-white/80" /> Custom Responsive Design
+                <div className="flex items-center gap-3 text-sm card px-4 py-3 rounded border border-white/10 text-foreground/90">
+                  <Server className="size-4 text-white/80 shrink-0" />
+                  <span>Australian-based (just me) and Australian hosting</span>
                 </div>
-                <div className="flex items-center gap-2 text-xs card px-3 py-1.5 rounded border border-white/10 text-foreground/80">
-                  <Server className="size-4 text-white/80" /> Managed Australian Hosting
+                <div className="flex items-center gap-3 text-sm card px-4 py-3 rounded border border-white/10 text-foreground/90">
+                  <Tag className="size-4 text-white/80 shrink-0" />
+                  <span>Transparent pricing</span>
                 </div>
-                <div className="flex items-center gap-2 text-xs card px-3 py-1.5 rounded border border-white/10 text-foreground/80">
-                  <ShieldCheck className="size-4 text-white/80" /> Post-Launch Support
+                <div className="flex items-center gap-3 text-sm card px-4 py-3 rounded border border-white/10 text-foreground/90">
+                  <Headphones className="size-4 text-white/80 shrink-0" />
+                  <span>Ongoing support and maintenance</span>
                 </div>
+              </div>
+
+              <div className="pt-2">
+                <Button
+                  text="Start a conversation"
+                  href="https://calendly.com/josiabatoni/30min"
+                  variant="primary"
+                />
               </div>
             </div>
           </ScrollReveal>

@@ -22,10 +22,10 @@ export default function Layout() {
           { name: "What's Included", href: "#whats-included" },
           { name: "Process", href: "#process" },
           { name: "Work", href: "#work" },
-          { name: "About", href: "#team" },
+          { name: "About", href: "#about" },
           { name: "Contact", href: "#contact" },
         ]}
-        ctaButton={{ text: "Book Consultation", href: "#contact" }}
+        ctaButton={{ text: "Book Consultation", href: "https://calendly.com/josiabatoni/30min" }}
       />
       <main className="flex-grow">
         <Outlet />
@@ -39,6 +39,7 @@ export default function Layout() {
               { label: "Services", href: "#services" },
               { label: "What's Included", href: "#whats-included" },
               { label: "Process", href: "#process" },
+              { label: "About", href: "#about" },
               { label: "Contact", href: "#contact" },
             ],
           },

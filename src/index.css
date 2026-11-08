@@ -59,26 +59,31 @@
 /* @typography/text-sizing/medium (mobile) */
 @media (max-width: 768px) {
   :root {
-    --text-2xs: 2.5vw;
-    --text-xs: 2.75vw;
-    --text-sm: 3vw;
-    --text-base: 3.25vw;
-    --text-lg: 3.5vw;
-    --text-xl: 4.25vw;
-    --text-2xl: 5vw;
-    --text-3xl: 6vw;
-    --text-4xl: 7vw;
-    --text-5xl: 7.5vw;
-    --text-6xl: 8.5vw;
-    --text-7xl: 10vw;
-    --text-8xl: 12vw;
-    --text-9xl: 14vw;
-    --width-content-width: 80vw;
-    --width-carousel-padding: calc((100vw - var(--width-content-width)) / 2 + 1px - 1rem);
+    --text-2xs: 0.75rem;
+    --text-xs: 0.8125rem;
+    --text-sm: 0.875rem;
+    --text-base: 1rem;
+    --text-lg: 1.125rem;
+    --text-xl: 1.25rem;
+    --text-2xl: 1.5rem;
+    --text-3xl: 1.75rem;
+    --text-4xl: 2.125rem;
+    --text-5xl: 2.5rem;
+    --text-6xl: 2.875rem;
+    --text-7xl: 3.25rem;
+    --text-8xl: 3.75rem;
+    --text-9xl: 4.5rem;
+    --width-content-width: min(92vw, calc(100vw - 1.75rem));
+    --width-carousel-padding: calc((100vw - var(--width-content-width)) / 2 + 1px - 0.5rem);
     --width-carousel-padding-controls: calc((100vw - var(--width-content-width)) / 2 + 1px);
     --width-carousel-item-2: var(--width-content-width);
     --width-carousel-item-3: var(--width-content-width);
     --width-carousel-item-4: var(--width-content-width);
+  }
+
+  section {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
   }
 }
 

@@ -27,10 +27,10 @@ const MetricsFeatureCards = ({
   metrics: Metric[];
   textAnimation: "slide-up" | "fade-blur" | "fade";
 }) => (
-  <section aria-label="Metrics section" className="py-20">
-    <div className="flex flex-col gap-8 md:gap-10">
+  <section aria-label="Metrics section" className="py-12 md:py-20">
+    <div className="flex flex-col gap-6 md:gap-10">
       <div className="flex flex-col items-center gap-2 w-content-width mx-auto">
-        <div className="px-3 py-1 mb-1 text-sm card rounded w-fit">
+        <div className="px-3 py-1 mb-1 text-xs md:text-sm card rounded-full w-fit">
           <p>{tag}</p>
         </div>
 
@@ -39,7 +39,7 @@ const MetricsFeatureCards = ({
           variant={textAnimation}
           gradientText={true}
           tag="h2"
-          className="md:max-w-8/10 text-6xl 2xl:text-7xl leading-[1.15] font-semibold text-center text-balance"
+          className="md:max-w-8/10 text-3xl sm:text-5xl md:text-6xl 2xl:text-7xl leading-[1.15] font-semibold text-center text-balance"
         />
 
         <TextAnimation
@@ -47,13 +47,13 @@ const MetricsFeatureCards = ({
           variant={textAnimation}
           gradientText={false}
           tag="p"
-          className="md:max-w-7/10 text-lg md:text-xl leading-snug text-center text-balance"
+          className="md:max-w-7/10 text-base md:text-xl leading-snug text-center text-balance opacity-90"
         />
 
         {(primaryButton || secondaryButton) && (
-          <div className="flex flex-wrap justify-center gap-3 mt-2 md:mt-3">
-            {primaryButton && <Button text={primaryButton.text} href={primaryButton.href} variant="primary"/>}
-            {secondaryButton && <Button text={secondaryButton.text} href={secondaryButton.href} variant="secondary"animationDelay={0.1} />}
+          <div className="flex flex-col sm:flex-row w-full sm:w-auto justify-center gap-3 mt-2 md:mt-3">
+            {primaryButton && <Button text={primaryButton.text} href={primaryButton.href} variant="primary" className="w-full sm:w-auto text-center"/>}
+            {secondaryButton && <Button text={secondaryButton.text} href={secondaryButton.href} variant="secondary" animationDelay={0.1} className="w-full sm:w-auto text-center"/>}
           </div>
         )}
       </div>
@@ -61,19 +61,19 @@ const MetricsFeatureCards = ({
       <ScrollReveal variant="slide-up">
         <GridOrCarousel>
           {metrics.map((metric) => (
-            <div key={metric.value} className="flex flex-col justify-between gap-4 xl:gap-5 2xl:gap-6 p-6 xl:p-7 2xl:p-8 h-full card rounded">
-              <div className="flex flex-col gap-0 min-w-0">
-                <span className="text-8xl md:text-7xl font-semibold leading-none truncate">{metric.value}</span>
-                <span className="text-xl truncate">{metric.title}</span>
+            <div key={metric.value} className="flex flex-col justify-between gap-4 xl:gap-5 2xl:gap-6 p-5 sm:p-6 xl:p-7 2xl:p-8 h-full card rounded-2xl md:rounded">
+              <div className="flex flex-col gap-0.5 min-w-0">
+                <span className="text-4xl sm:text-6xl md:text-7xl font-semibold leading-none truncate">{metric.value}</span>
+                <span className="text-lg md:text-xl truncate font-medium">{metric.title}</span>
               </div>
 
-              <div className="flex flex-col gap-3 pt-5 border-t border-foreground/5">
+              <div className="flex flex-col gap-2.5 pt-4 border-t border-foreground/5">
                 {metric.features.map((feature) => (
-                  <div key={feature} className="flex items-start gap-3">
-                    <div className="flex items-center justify-center shrink-0 size-6 primary-button rounded">
+                  <div key={feature} className="flex items-start gap-2.5">
+                    <div className="flex items-center justify-center shrink-0 size-5 sm:size-6 primary-button rounded-md sm:rounded">
                       <Check className="size-3 text-primary-cta-text" strokeWidth={2} />
                     </div>
-                    <span className="text-sm leading-snug">{feature}</span>
+                    <span className="text-xs sm:text-sm leading-snug opacity-90">{feature}</span>
                   </div>
                 ))}
               </div>

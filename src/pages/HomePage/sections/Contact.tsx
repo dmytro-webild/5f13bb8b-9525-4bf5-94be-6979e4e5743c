@@ -36,11 +36,11 @@ const ContactCenter = () => {
   };
 
   return (
-    <section aria-label="Contact section" className="py-20">
+    <section aria-label="Contact section" className="py-12 md:py-20">
       <div className="w-content-width mx-auto">
-        <ScrollReveal variant="slide-up" className="flex items-center justify-center py-20 card rounded">
-          <div className="flex flex-col items-center w-full md:w-1/2 gap-2 px-5">
-            <div className="px-3 py-1 mb-1 text-sm card rounded w-fit">
+        <ScrollReveal variant="slide-up" className="flex items-center justify-center py-12 md:py-20 px-4 md:px-8 card rounded-3xl md:rounded shadow-xl">
+          <div className="flex flex-col items-center w-full md:w-8/10 xl:w-1/2 gap-3 text-center">
+            <div className="px-3 py-1 mb-1 text-xs md:text-sm card rounded-full w-fit">
               <p>{"Get in Touch"}</p>
             </div>
 
@@ -49,7 +49,7 @@ const ContactCenter = () => {
               variant={"fade-blur"}
               gradientText={true}
               tag="h2"
-              className="md:max-w-9/10 text-6xl 2xl:text-7xl leading-[1.15] font-semibold text-center text-balance"
+              className="text-3xl sm:text-5xl md:text-6xl 2xl:text-7xl leading-[1.15] font-semibold text-center text-balance"
             />
 
             <TextAnimation
@@ -57,12 +57,12 @@ const ContactCenter = () => {
               variant={"fade-blur"}
               gradientText={false}
               tag="p"
-              className="md:max-w-9/10 text-lg md:text-xl leading-snug text-center text-balance"
+              className="text-base md:text-xl leading-relaxed text-center text-balance opacity-90"
             />
 
             <form
               onSubmit={handleSubmit}
-              className="flex flex-col md:flex-row w-full md:w-8/10 2xl:w-6/10 gap-3 md:gap-1 p-1 mt-2 md:mt-3 card rounded justify-center"
+              className="flex flex-col sm:flex-row w-full max-w-md gap-3 p-1.5 mt-3 card rounded-2xl md:rounded justify-center items-center"
             >
               <input
                 type="email"
@@ -76,7 +76,7 @@ const ContactCenter = () => {
                 href="https://calendly.com/josiabatoni/30min"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center h-10 px-6 text-sm rounded primary-button text-primary-cta-text cursor-pointer"
+                className="flex items-center justify-center h-12 w-full sm:w-auto px-6 text-sm md:text-base font-semibold rounded-xl md:rounded primary-button text-primary-cta-text cursor-pointer text-center"
               >
                 {"Get Your Free Consultation"}
               </a>

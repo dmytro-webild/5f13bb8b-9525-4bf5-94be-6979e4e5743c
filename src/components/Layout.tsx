@@ -10,16 +10,13 @@ export default function Layout() {
     <StyleProvider buttonVariant="default" siteBackground="none" heroBackground="none">
       <SiteBackgroundSlot />
       <NavbarDropdown
-                logo={
-                  <span className="flex items-center gap-2">
-                    <img
-                      src="https://storage.googleapis.com/webild/users/user_3FwL5pfkeyOX14T98rYzVwLBGK9/uploaded-1794128875631-x65p39bt.png"
-                      alt="Cyans Agency Logo"
-                      className="h-7 w-auto object-contain mix-blend-screen"
-                    />
-                    <span className="font-semibold text-cream">Cyans Agency</span>
-                  </span>
-                }
+        logo={
+          <img
+            src="https://storage.googleapis.com/webild/users/user_3FwL5pfkeyOX14T98rYzVwLBGK9/uploaded-1794144853094-88vtnccl.png"
+            alt="Cyans Agency Logo"
+            className="h-8 w-auto object-contain brightness-0 invert"
+          />
+        }
                 navItems={[
                   { name: "Services", href: "#services" },
                   { name: "Process", href: "#process" },

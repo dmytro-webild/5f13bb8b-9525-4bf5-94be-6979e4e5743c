@@ -51,46 +51,12 @@ const LoopCarousel = ({ children }: LoopCarouselProps) => {
         </div>
       </div>
 
-      {/* Mobile controls & indicators */}
-      <div className="flex md:hidden items-center justify-between px-4 mt-4 w-content-width mx-auto">
-        <div className="flex items-center gap-1.5">
-          {items.map((_, i) => (
-            <div
-              key={i}
-              className={cls(
-                "h-1.5 rounded-full transition-all duration-300",
-                selectedIndex === i ? "w-5 primary-button" : "w-1.5 bg-foreground/20"
-              )}
-            />
-          ))}
-        </div>
-        <div className="flex items-center gap-2">
-          <button
-            onClick={scrollPrev}
-            type="button"
-            aria-label="Previous slide"
-            className="flex items-center justify-center size-8 primary-button rounded-full cursor-pointer"
-          >
-            <ChevronLeft className="size-4 text-primary-cta-text" />
-          </button>
-          <button
-            onClick={scrollNext}
-            type="button"
-            aria-label="Next slide"
-            className="flex items-center justify-center size-8 primary-button rounded-full cursor-pointer"
-          >
-            <ChevronRight className="size-4 text-primary-cta-text" />
-          </button>
-        </div>
-      </div>
-
-      {/* Desktop side controls */}
-      <div className="hidden md:flex absolute inset-y-0 left-0 right-0 items-center justify-between w-content-width mx-auto pointer-events-none">
+      <div className="absolute inset-y-0 left-0 right-0 flex items-center justify-between w-content-width mx-auto pointer-events-none">
         <button
           onClick={scrollPrev}
           type="button"
           aria-label="Previous slide"
-          className="flex items-center justify-center h-9 aspect-square primary-button rounded-full cursor-pointer pointer-events-auto shadow-lg"
+          className="flex items-center justify-center h-9 aspect-square primary-button rounded cursor-pointer pointer-events-auto"
         >
           <ChevronLeft className="h-2/5 aspect-square text-primary-cta-text" />
         </button>
@@ -98,7 +64,7 @@ const LoopCarousel = ({ children }: LoopCarouselProps) => {
           onClick={scrollNext}
           type="button"
           aria-label="Next slide"
-          className="flex items-center justify-center h-9 aspect-square primary-button rounded-full cursor-pointer pointer-events-auto shadow-lg"
+          className="flex items-center justify-center h-9 aspect-square primary-button rounded cursor-pointer pointer-events-auto"
         >
           <ChevronRight className="h-2/5 aspect-square text-primary-cta-text" />
         </button>

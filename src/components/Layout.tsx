@@ -15,7 +15,7 @@ export default function Layout() {
                     <img
                       src="https://storage.googleapis.com/webild/users/user_3FwL5pfkeyOX14T98rYzVwLBGK9/uploaded-1794128875631-x65p39bt.png"
                       alt="Cyans Agency Logo"
-                      className="h-7 w-auto object-contain mix-blend-multiply"
+                      className="h-7 w-auto object-contain"
                     />
                     <span>Cyans Agency</span>
                   </span>

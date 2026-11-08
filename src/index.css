@@ -1,19 +1,19 @@
-/* Cyans Agency - Black Base Theme */
+/* Web Agency - Dark Monochrome */
 @import "tailwindcss";
 @import "./styles/masks.css";
 @import "./styles/animations.css";
 
 :root {
-  /* Dark / Black Theme */
-  --background: #000000;
-  --card: #121212;
-  --foreground: #ffffff;
+  /* Dark theme with monochrome accents */
+  --background: #0a0a0a;
+  --card: #161616;
+  --foreground: #f0f0f0;
   --primary-cta: #ffffff;
-  --primary-cta-text: #000000;
-  --secondary-cta: #1a1a1e;
-  --secondary-cta-text: #ffffff;
-  --accent: #a1a1aa;
-  --background-accent: #27272a;
+  --primary-cta-text: #0a0a0a;
+  --secondary-cta: #1e1e1e;
+  --secondary-cta-text: #e0e0e0;
+  --accent: #d0d0d0;
+  --background-accent: #434343;
 
   /* @layout/border-radius/soft */
   --radius: 1.5rem;
@@ -59,31 +59,26 @@
 /* @typography/text-sizing/medium (mobile) */
 @media (max-width: 768px) {
   :root {
-    --text-2xs: 0.75rem;
-    --text-xs: 0.8125rem;
-    --text-sm: 0.875rem;
-    --text-base: 1rem;
-    --text-lg: 1.125rem;
-    --text-xl: 1.25rem;
-    --text-2xl: 1.5rem;
-    --text-3xl: 1.75rem;
-    --text-4xl: 2.125rem;
-    --text-5xl: 2.5rem;
-    --text-6xl: 2.875rem;
-    --text-7xl: 3.25rem;
-    --text-8xl: 3.75rem;
-    --text-9xl: 4.5rem;
-    --width-content-width: min(92vw, calc(100vw - 1.75rem));
-    --width-carousel-padding: calc((100vw - var(--width-content-width)) / 2 + 1px - 0.5rem);
+    --text-2xs: 2.5vw;
+    --text-xs: 2.75vw;
+    --text-sm: 3vw;
+    --text-base: 3.25vw;
+    --text-lg: 3.5vw;
+    --text-xl: 4.25vw;
+    --text-2xl: 5vw;
+    --text-3xl: 6vw;
+    --text-4xl: 7vw;
+    --text-5xl: 7.5vw;
+    --text-6xl: 8.5vw;
+    --text-7xl: 10vw;
+    --text-8xl: 12vw;
+    --text-9xl: 14vw;
+    --width-content-width: 80vw;
+    --width-carousel-padding: calc((100vw - var(--width-content-width)) / 2 + 1px - 1rem);
     --width-carousel-padding-controls: calc((100vw - var(--width-content-width)) / 2 + 1px);
     --width-carousel-item-2: var(--width-content-width);
     --width-carousel-item-3: var(--width-content-width);
     --width-carousel-item-4: var(--width-content-width);
-  }
-
-  section {
-    padding-top: 3.5rem;
-    padding-bottom: 3.5rem;
   }
 }
 
@@ -167,22 +162,19 @@ h6 {
 
 .card {
   backdrop-filter: blur(8px);
-  background: linear-gradient(to bottom right, color-mix(in srgb, var(--color-card) 95%, transparent), color-mix(in srgb, var(--color-card) 85%, transparent));
-  box-shadow: 0 2px 8px 0 rgb(0 0 0 / 0.04);
-  border: 1px solid color-mix(in srgb, var(--color-foreground) 10%, transparent);
+  background: linear-gradient(to bottom right, color-mix(in srgb, var(--color-card) 80%, transparent), color-mix(in srgb, var(--color-card) 40%, transparent));
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  border: 1px solid var(--color-card);
 }
 
 .primary-button {
-  background: linear-gradient(165deg, color-mix(in srgb, var(--color-primary-cta) 90%, var(--color-foreground)) 0%, var(--color-primary-cta) 40%, color-mix(in srgb, var(--color-primary-cta) 95%, var(--color-background)) 100%);
-  color: var(--color-primary-cta-text);
-  font-weight: 600;
-  box-shadow: inset 0 1px 1px 0 color-mix(in srgb, var(--color-primary-cta-text) 30%, transparent), inset 0 -1px 1px 0 color-mix(in srgb, var(--color-background) 15%, transparent), 0 4px 12px -2px color-mix(in srgb, var(--color-primary-cta) 20%, transparent);
+  background: linear-gradient(165deg, color-mix(in srgb, var(--color-primary-cta) 85%, var(--color-foreground)) 0%, var(--color-primary-cta) 40%, color-mix(in srgb, var(--color-primary-cta) 90%, var(--color-background)) 100%);
+  box-shadow: inset 0 1px 1px 0 color-mix(in srgb, var(--color-foreground) 25%, transparent), inset 0 -1px 1px 0 color-mix(in srgb, var(--color-background) 15%, transparent), 0 4px 12px -2px color-mix(in srgb, var(--color-primary-cta) 25%, transparent);
 }
 
 .secondary-button {
   backdrop-filter: blur(8px);
-  background: linear-gradient(to bottom right, color-mix(in srgb, var(--color-secondary-cta) 90%, transparent), var(--color-secondary-cta));
-  color: var(--color-secondary-cta-text);
+  background: linear-gradient(to bottom right, color-mix(in srgb, var(--color-secondary-cta) 80%, transparent), var(--color-secondary-cta));
   box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-  border: 1px solid color-mix(in srgb, var(--color-foreground) 12%, transparent);
+  border: 1px solid var(--color-secondary-cta);
 }

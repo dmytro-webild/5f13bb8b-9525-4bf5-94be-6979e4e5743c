@@ -29,7 +29,7 @@ const steps = [
 
 export default function ProcessSection(): React.JSX.Element {
   return (
-    <div id="process" data-section="process" className="scroll-mt-24">
+    <div id="process" data-section="process" className="scroll-mt-24 md:scroll-mt-28">
       <section aria-label="Process section" className="py-20">
         <div className="flex flex-col gap-8 md:gap-10 w-content-width mx-auto">
           <div className="flex flex-col items-center gap-2">

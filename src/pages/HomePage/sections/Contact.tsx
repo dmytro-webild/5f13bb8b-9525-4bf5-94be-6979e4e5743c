@@ -6,7 +6,7 @@ import { Mail, Calendar, MapPin } from "lucide-react";
 
 export default function ContactSection(): React.JSX.Element {
   return (
-    <div data-webild-section="contact" data-section="contact" id="contact" className="scroll-mt-24">
+    <div data-webild-section="contact" data-section="contact" id="contact" className="scroll-mt-24 md:scroll-mt-28">
       <section aria-label="Contact and Booking section" className="py-20">
         <div className="w-content-width mx-auto flex flex-col gap-8 md:gap-10">
           <div className="flex flex-col items-center gap-2">
@@ -15,19 +15,19 @@ export default function ContactSection(): React.JSX.Element {
             </div>
 
             <TextAnimation
-              text={"Build an SEO-Optimised Website That Ranks Higher & Gets More Leads"}
+              text={"Let's chat about your website"}
               variant={"fade-blur"}
               gradientText={true}
               tag="h2"
-              className="md:max-w-8/10 text-5xl md:text-6xl 2xl:text-7xl leading-[1.15] font-semibold text-center text-balance"
+              className="md:max-w-8/10 text-4xl sm:text-5xl md:text-6xl 2xl:text-7xl leading-[1.15] font-semibold text-center text-balance"
             />
 
             <TextAnimation
-              text={"Book a free 1-on-1 consultation to discuss your business goals, competitors, and website strategy."}
+              text={"Book a free 1-on-1 consultation to discuss your business goals and website strategy."}
               variant={"fade-blur"}
               gradientText={false}
               tag="p"
-              className="md:max-w-7/10 text-lg md:text-xl leading-snug text-center text-balance text-foreground/80"
+              className="md:max-w-7/10 text-base sm:text-lg md:text-xl leading-snug text-center text-balance text-foreground/80"
             />
           </div>
 
@@ -55,7 +55,7 @@ export default function ContactSection(): React.JSX.Element {
 
               <div className="flex flex-wrap items-center justify-center gap-4 text-xs text-foreground/70 pt-4 border-t border-white/10 w-full">
                 <span className="flex items-center gap-1.5"><MapPin className="size-3.5 text-white/80" /> Melbourne, VIC, Australia</span>
-                <span className="flex items-center gap-1.5"><Calendar className="size-3.5 text-white/80" /> 1-on-1 direct booking calendar</span>
+                <span className="flex items-center gap-1.5"><Calendar className="size-3.5 text-white/80" /> Direct founder booking calendar</span>
               </div>
             </div>
           </ScrollReveal>

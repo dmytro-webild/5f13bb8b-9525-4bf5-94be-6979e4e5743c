@@ -6,7 +6,7 @@ import { MapPin, Layout, Server, Tag, Headphones } from "lucide-react";
 
 export default function TeamSection(): React.JSX.Element {
   return (
-    <div id="about" data-section="about" data-webild-section="about" className="scroll-mt-24">
+    <div id="about" data-section="about" data-webild-section="about" className="scroll-mt-24 md:scroll-mt-28">
       <section aria-label="About section" className="py-20">
         <div className="flex flex-col gap-8 md:gap-10 w-content-width mx-auto">
           <div className="flex flex-col items-center gap-2">
@@ -19,7 +19,7 @@ export default function TeamSection(): React.JSX.Element {
               variant={"fade-blur"}
               gradientText={true}
               tag="h2"
-              className="md:max-w-8/10 text-5xl md:text-6xl 2xl:text-7xl leading-[1.15] font-semibold text-center text-balance"
+              className="md:max-w-8/10 text-4xl sm:text-5xl md:text-6xl 2xl:text-7xl leading-[1.15] font-semibold text-center text-balance"
             />
 
             <TextAnimation
@@ -27,7 +27,7 @@ export default function TeamSection(): React.JSX.Element {
               variant={"fade-blur"}
               gradientText={false}
               tag="p"
-              className="md:max-w-7/10 text-lg md:text-xl leading-snug text-center text-balance text-foreground/80"
+              className="md:max-w-7/10 text-base sm:text-lg md:text-xl leading-snug text-center text-balance text-foreground/80"
             />
           </div>
 
@@ -41,8 +41,8 @@ export default function TeamSection(): React.JSX.Element {
                 <p className="text-sm font-semibold text-white/70">Founder, Cyan’s Agency</p>
               </div>
 
-              <p className="text-lg text-foreground/90 leading-relaxed">
-                I’m Josia Batoni, Founder of Cyan’s Agency, a sole trader in Melbourne. A great website is one of the most powerful tools a business can have. I don’t just make things look good — I make them work. Every project starts with understanding your customers, your competitors and your goals. I combine strategic thinking with strong design to deliver websites that help you rank higher on Google and get more leads.
+              <p className="text-base sm:text-lg text-foreground/90 leading-relaxed">
+                I’m Josia Batoni, Founder of Cyan’s Agency, a sole trader in Melbourne. I build custom, conversion-focused websites that help Australian businesses rank higher on Google and get more leads. Every project combines strategic thinking with clean design and reliable local hosting.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 w-full pt-2">
@@ -52,7 +52,7 @@ export default function TeamSection(): React.JSX.Element {
                 </div>
                 <div className="flex items-center gap-3 text-sm card px-4 py-3 rounded border border-white/10 text-foreground/90">
                   <Server className="size-4 text-white/80 shrink-0" />
-                  <span>Australian-based (just me) and Australian hosting</span>
+                  <span>Australian-based (just me) & Australian hosting</span>
                 </div>
                 <div className="flex items-center gap-3 text-sm card px-4 py-3 rounded border border-white/10 text-foreground/90">
                   <Tag className="size-4 text-white/80 shrink-0" />
@@ -60,7 +60,7 @@ export default function TeamSection(): React.JSX.Element {
                 </div>
                 <div className="flex items-center gap-3 text-sm card px-4 py-3 rounded border border-white/10 text-foreground/90">
                   <Headphones className="size-4 text-white/80 shrink-0" />
-                  <span>Ongoing support and maintenance</span>
+                  <span>Ongoing support & maintenance</span>
                 </div>
               </div>
 

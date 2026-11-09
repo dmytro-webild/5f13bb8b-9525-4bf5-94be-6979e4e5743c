@@ -81,7 +81,7 @@ export default function ServicesSection(): React.JSX.Element {
   };
 
   return (
-    <div data-webild-section="services" data-section="services" id="services" className="scroll-mt-24 md:scroll-mt-28">
+    <div data-webild-section="services" data-section="services" id="services" className="scroll-mt-28 md:scroll-mt-36 pt-6 md:pt-10">
       <section aria-label="Services section" className="py-20">
         <div className="flex flex-col gap-8 md:gap-10 w-content-width mx-auto">
           <div className="flex flex-col items-center gap-2">

@@ -103,7 +103,7 @@ export default function AiUgcTemplate() {
             description="Join thousands of creators and marketers already making better ads with AI."
             testimonials={[
               { name: "Jonathan", role: "Founder, SiftCoin", quote: "Genuinely impressed. We launched three campaigns in a day and every single one outperformed our old agency work.", imageSrc: "https://randomuser.me/api/portraits/men/32.jpg" },
-              { name: "Ayo", role: "Founder, SaaSi", quote: "Three years ago this kind of output would've taken a full production team. Now it's small team agility with AI. Wild times.", imageSrc: "https://randomuser.me/api/portraits/men/75.jpg" },
+              { name: "Ayo", role: "Founder, SaaSi", quote: "Three years ago this kind of output would've taken a full production team. Now it's just me and an AI. Wild times.", imageSrc: "https://randomuser.me/api/portraits/men/75.jpg" },
               { name: "Sarah", role: "Growth Lead, Lumino", quote: "I was completely new to paid media. After switching to AI-generated creatives, my page views jumped 3,800% in one month.", imageSrc: "https://randomuser.me/api/portraits/women/44.jpg" },
               { name: "Derek", role: "CMO, Venturo", quote: "We retired our freelance video roster. The AI output matches the quality and the turnaround is measured in minutes, not weeks.", imageSrc: "https://randomuser.me/api/portraits/men/36.jpg" },
               { name: "Lina", role: "Performance Marketing, Bolt", quote: "Our cost per acquisition dropped 40% in two weeks. The platform picks up on winning hooks faster than any strategist I've worked with.", imageSrc: "https://randomuser.me/api/portraits/women/57.jpg" },

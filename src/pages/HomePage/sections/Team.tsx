@@ -3,7 +3,7 @@ import TeamStackedCards from "@/components/sections/team/TeamStackedCards";
 
 export default function TeamSection(): React.JSX.Element {
   return (
-    <div id="about" data-section="about" data-webild-section="about" className="scroll-mt-24 md:scroll-mt-28">
+    <div id="about" data-section="about" data-webild-section="about" className="scroll-mt-28 md:scroll-mt-36 pt-6 md:pt-10">
       <TeamStackedCards
         textAnimation="fade-blur"
         tag="About Cyan's Agency"
@@ -14,6 +14,7 @@ export default function TeamSection(): React.JSX.Element {
           {
             name: "Josia Batoni",
             role: "Founder · Melbourne, Australia",
+            imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/web-agency-2/team-2.webp",
           },
         ]}
       />

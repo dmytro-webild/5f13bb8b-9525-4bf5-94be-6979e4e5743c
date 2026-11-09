@@ -35,7 +35,7 @@ const FaqSimple = ({
   };
 
   return (
-    <section aria-label="FAQ section" className="py-8 md:py-12">
+    <section aria-label="FAQ section" className="py-20">
       <div className="w-content-width mx-auto flex flex-col gap-8 md:gap-10">
         <div className="flex flex-col items-center gap-2">
           <div className="px-3 py-1 mb-1 text-sm card rounded w-fit">

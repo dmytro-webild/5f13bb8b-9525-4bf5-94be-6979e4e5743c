@@ -33,7 +33,7 @@ export default function ProcessSection(): React.JSX.Element {
       <section aria-label="Process section" className="py-8 md:py-12">
         <div className="flex flex-col gap-8 md:gap-10 w-content-width mx-auto">
           <div className="flex flex-col items-center gap-2">
-            <div className="px-3 py-1 mb-1 text-sm card rounded w-fit text-foreground/80 border-black/10">
+            <div className="px-3 py-1 mb-1 text-sm card bg-[#EE3678]/10 text-[#EE3678] border border-[#EE3678]/30 rounded font-medium w-fit">
               <p>{"Process"}</p>
             </div>
 
@@ -42,7 +42,7 @@ export default function ProcessSection(): React.JSX.Element {
               variant={"fade-blur"}
               gradientText={true}
               tag="h2"
-              className="md:max-w-8/10 text-4xl sm:text-5xl md:text-6xl 2xl:text-7xl leading-[1.15] font-semibold text-center text-balance"
+              className="md:max-w-8/10 text-4xl sm:text-5xl md:text-6xl 2xl:text-7xl leading-[1.15] font-semibold text-center text-balance text-[#F4F4F5]"
             />
 
             <TextAnimation
@@ -50,7 +50,7 @@ export default function ProcessSection(): React.JSX.Element {
               variant={"fade-blur"}
               gradientText={false}
               tag="p"
-              className="md:max-w-7/10 text-base sm:text-lg md:text-xl leading-snug text-center text-balance text-foreground/80"
+              className="md:max-w-7/10 text-base sm:text-lg md:text-xl leading-snug text-center text-balance text-[#A1A1AA]"
             />
           </div>
 
@@ -61,14 +61,14 @@ export default function ProcessSection(): React.JSX.Element {
                 return (
                   <div
                     key={step.title}
-                    className="relative flex flex-col justify-between gap-5 p-6 md:p-7 card rounded border border-black/10 hover:border-black/30 transition-colors h-full min-h-[220px]"
+                    className="relative flex flex-col justify-between gap-5 p-6 md:p-7 card rounded border border-white/10 hover:border-[#EE3678]/40 transition-colors h-full min-h-[220px]"
                   >
                     <div className="flex items-center justify-center size-12 primary-button rounded-full">
-                      <Icon className="size-5 text-primary-cta-text" strokeWidth={1.75} />
+                      <Icon className="size-5 text-white" strokeWidth={1.75} />
                     </div>
                     <div className="flex flex-col gap-2">
-                      <h3 className="text-xl md:text-2xl font-bold text-black leading-snug">{step.title}</h3>
-                      <p className="text-sm md:text-base leading-relaxed text-foreground/80">{step.description}</p>
+                      <h3 className="text-xl md:text-2xl font-bold text-[#F4F4F5] leading-snug">{step.title}</h3>
+                      <p className="text-sm md:text-base leading-relaxed text-[#A1A1AA]">{step.description}</p>
                     </div>
                     <BorderGlow />
                   </div>

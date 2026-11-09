@@ -34,7 +34,7 @@ const HeroSplit = ({
       <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16 w-content-width mx-auto">
         <div className="w-full md:w-1/2">
           <div className="flex flex-col items-center md:items-start gap-3.5">
-            <div className="px-3 py-1 mb-1 text-xs sm:text-sm card rounded w-fit">
+            <div className="px-3 py-1 mb-1 text-xs sm:text-sm card bg-[#EE3678]/10 text-[#EE3678] border border-[#EE3678]/30 rounded font-medium w-fit">
               <p>{tag}</p>
             </div>
 
@@ -43,7 +43,7 @@ const HeroSplit = ({
               variant={textAnimation}
               gradientText={true}
               tag="h1"
-              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl 2xl:text-8xl leading-tight font-semibold text-center md:text-left text-balance max-w-2xl"
+              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl 2xl:text-8xl leading-tight font-semibold text-center md:text-left text-balance max-w-2xl text-[#F4F4F5]"
             />
 
             <TextAnimation
@@ -51,7 +51,7 @@ const HeroSplit = ({
               variant={textAnimation}
               gradientText={false}
               tag="p"
-              className="md:max-w-8/10 text-base sm:text-lg md:text-xl leading-snug text-center md:text-left text-balance text-foreground/80"
+              className="md:max-w-8/10 text-base sm:text-lg md:text-xl leading-snug text-center md:text-left text-balance text-[#A1A1AA]"
             />
 
             <div className="flex flex-wrap max-md:justify-center gap-3 mt-2 md:mt-3">

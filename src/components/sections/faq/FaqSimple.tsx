@@ -38,7 +38,7 @@ const FaqSimple = ({
     <section aria-label="FAQ section" className="py-8 md:py-12">
       <div className="w-content-width mx-auto flex flex-col gap-8 md:gap-10">
         <div className="flex flex-col items-center gap-2">
-          <div className="px-3 py-1 mb-1 text-sm card rounded w-fit">
+          <div className="px-3 py-1 mb-1 text-sm card bg-[#EE3678]/10 text-[#EE3678] border border-[#EE3678]/30 rounded font-medium w-fit">
             <p>{tag}</p>
           </div>
 
@@ -47,7 +47,7 @@ const FaqSimple = ({
             variant={textAnimation}
             gradientText={true}
             tag="h2"
-            className="md:max-w-8/10 text-6xl 2xl:text-7xl leading-[1.15] font-semibold text-center text-balance"
+            className="md:max-w-8/10 text-6xl 2xl:text-7xl leading-[1.15] font-semibold text-center text-balance text-[#F4F4F5]"
           />
 
           <TextAnimation
@@ -55,7 +55,7 @@ const FaqSimple = ({
             variant={textAnimation}
             gradientText={false}
             tag="p"
-            className="md:max-w-7/10 text-lg md:text-xl leading-snug text-center text-balance"
+            className="md:max-w-7/10 text-lg md:text-xl leading-snug text-center text-balance text-[#A1A1AA]"
           />
 
           {(primaryButton || secondaryButton) && (
@@ -71,14 +71,14 @@ const FaqSimple = ({
             <div
               key={index}
               onClick={() => handleToggle(index)}
-              className="p-3 xl:p-3.5 2xl:p-4 rounded card cursor-pointer select-none"
+              className="p-3 xl:p-3.5 2xl:p-4 rounded card cursor-pointer select-none border border-white/10 hover:border-[#EE3678]/40 transition-colors"
             >
               <div className="flex items-center justify-between gap-3 xl:gap-3.5 2xl:gap-4">
-                <h3 className="text-lg md:text-xl font-medium leading-snug">{item.question}</h3>
+                <h3 className="text-lg md:text-xl font-medium leading-snug text-[#F4F4F5]">{item.question}</h3>
                 <div className="flex shrink-0 items-center justify-center size-8 md:size-9 rounded primary-button">
                   <Plus
                     className={cls(
-                      "size-3.5 md:size-4 text-primary-cta-text transition-transform duration-300",
+                      "size-3.5 md:size-4 text-white transition-transform duration-300",
                       activeIndex === index && "rotate-45"
                     )}
                     strokeWidth={2}
@@ -94,7 +94,7 @@ const FaqSimple = ({
                     transition={{ duration: 0.3, ease: "easeOut" }}
                     className="overflow-hidden"
                   >
-                    <p className="pt-1 text-base leading-snug">{item.answer}</p>
+                    <p className="pt-2 text-base leading-snug text-[#A1A1AA]">{item.answer}</p>
                   </motion.div>
                 )}
               </AnimatePresence>

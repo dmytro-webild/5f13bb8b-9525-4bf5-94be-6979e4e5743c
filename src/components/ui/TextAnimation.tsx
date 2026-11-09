@@ -40,7 +40,7 @@ const TextAnimation = ({ text, variant, gradientText, tag = "p", className = "" 
   const [reverted, setReverted] = useState(false);
 
   const gradientClass = gradientText
-    ? "bg-gradient-to-r from-foreground to-primary-cta bg-clip-text text-transparent pb-[0.1em] -mb-[0.1em]"
+    ? "bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent pb-[0.1em] -mb-[0.1em]"
     : "";
 
   useEffect(() => {

@@ -8,66 +8,51 @@ const services = [
   {
     icon: Layout,
     title: "Website Design & Development",
-    tagline: "Bespoke & Conversion-Focused",
-    description: "Custom, conversion-focused websites that reflect your brand and turn visitors into clients. Built with a collaborative, transparent process — always on brief, on time, and on budget with no surprise bills.",
+    description: "Bespoke, conversion-focused websites built to turn visitors into paying clients.",
     features: [
       "Custom responsive design & UX",
-      "Mobile-first development",
       "Fast load speeds (Core Web Vitals)",
-      "Brand-aligned visual identity",
       "Built-in on-page SEO",
-      "Google Analytics & tracking setup"
     ]
   },
   {
     icon: Server,
     title: "Website Hosting",
-    titleSuffix: "Reliable Australian Hosting",
-    description: "Managed local Australian hosting providing low latency, faster load times for local visitors, and better data sovereignty. Includes full technical management so you never have to worry about server updates.",
+    description: "Managed local Australian hosting for faster load times, 99.9% uptime, and reliable security.",
     features: [
-      "Australian data centre (low latency)",
-      "Reliable Australian server infrastructure",
-      "Free SSL (HTTPS) certificate",
-      "Daily automated backups",
-      "CMS & server updates",
-      "Security monitoring & priority support"
+      "Australian data centre",
+      "Free SSL certificate & daily backups",
+      "Updates & security monitoring",
     ]
   },
   {
     icon: Search,
     title: "SEO Optimisation",
-    tagline: "Built-In Search Visibility",
-    description: "Built-in site structure, meta tags, and optimised content architecture to ensure your website ranks for relevant keywords and attracts organic traffic from day one.",
+    description: "Strategic site structure and keyword optimisation to help your business rank higher on Google.",
     features: [
-      "On-page SEO structure from day one",
-      "Targeted meta titles & descriptions",
-      "Search-friendly site architecture",
+      "On-page SEO from day one",
+      "Optimised meta titles & tags",
       "Google Search Console indexing",
-      "Google Review system integration"
     ]
   },
   {
     icon: ShieldCheck,
     title: "Ongoing Maintenance",
-    tagline: "Post-Launch Peace of Mind",
-    description: "Regular updates, security monitoring, and proactive checks to ensure your website remains secure, fast, and up to date long after launch.",
+    description: "Proactive CMS updates and technical support to keep your site fast, safe, and up to date.",
     features: [
-      "Regular CMS & plugin updates",
-      "Continuous security monitoring",
-      "Uptime & speed checks",
-      "Priority technical assistance"
+      "Regular CMS & security updates",
+      "Uptime & performance checks",
+      "Priority technical assistance",
     ]
   },
   {
     icon: Zap,
     title: "Growth Add-Ons",
-    tagline: "Automation & Lead Systems",
-    description: "Powerful automation workflows and interactive customer engagement tools built to turn more enquiries into booked clients automatically.",
+    description: "Automation workflows and engagement tools that capture leads and boost customer reviews.",
     features: [
-      "Business automation (lead capture to CRM workflows)",
-      "Google Review collection & reputation systems",
-      "Missed-call text-back systems",
-      "Automated chat & engagement bots"
+      "Lead capture & CRM automation",
+      "Google Review collection systems",
+      "Missed-call text-back & chat bots",
     ]
   }
 ];
@@ -96,7 +81,7 @@ export default function ServicesSection(): React.JSX.Element {
   };
 
   return (
-    <div data-webild-section="services" data-section="services" id="services" className="scroll-mt-24">
+    <div data-webild-section="services" data-section="services" id="services" className="scroll-mt-24 md:scroll-mt-28">
       <section aria-label="Services section" className="py-20">
         <div className="flex flex-col gap-8 md:gap-10 w-content-width mx-auto">
           <div className="flex flex-col items-center gap-2">
@@ -127,7 +112,7 @@ export default function ServicesSection(): React.JSX.Element {
               <div
                 ref={carouselRef}
                 onScroll={handleScroll}
-                className="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-4 px-1 scrollbar-none"
+                className="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-4 px-1 scrollbar-none touch-pan-x"
               >
                 {services.map((service, idx) => {
                   const Icon = service.icon;
@@ -135,30 +120,25 @@ export default function ServicesSection(): React.JSX.Element {
                     <div
                       key={service.title}
                       ref={(el) => { cardRefs.current[idx] = el; }}
-                      className="w-[85vw] max-w-[340px] shrink-0 snap-center p-6 card rounded flex flex-col justify-between gap-6 border border-white/10 hover:border-white/30 transition-colors"
+                      className="w-full shrink-0 snap-center snap-always p-5 card rounded flex flex-col justify-between gap-4 border border-white/10 hover:border-white/30 transition-colors"
                     >
-                      <div className="flex flex-col gap-4">
+                      <div className="flex flex-col gap-3">
                         <div className="flex items-center gap-3">
-                          <div className="p-3 rounded card border border-white/10 text-white w-fit">
-                            <Icon className="size-6" />
+                          <div className="p-2.5 rounded card border border-white/10 text-white shrink-0">
+                            <Icon className="size-5" />
                           </div>
-                          <div>
-                            <h3 className="text-xl font-bold text-cream leading-tight">{service.title}</h3>
-                            <span className="text-xs text-white/70 font-medium">
-                              {service.tagline || service.titleSuffix}
-                            </span>
-                          </div>
+                          <h3 className="text-lg font-bold text-cream leading-tight">{service.title}</h3>
                         </div>
 
-                        <p className="text-sm text-foreground/80 leading-relaxed">
+                        <p className="text-xs sm:text-sm text-foreground/80 leading-relaxed">
                           {service.description}
                         </p>
                       </div>
 
-                      <div className="pt-4 border-t border-white/10 flex flex-col gap-2.5">
+                      <div className="pt-3 border-t border-white/10 flex flex-col gap-2">
                         {service.features.map((feat) => (
-                          <div key={feat} className="flex items-start gap-2.5 text-xs sm:text-sm text-foreground/90">
-                            <CheckCircle2 className="size-4 text-white/80 shrink-0 mt-0.5" />
+                          <div key={feat} className="flex items-center gap-2 text-xs text-foreground/90">
+                            <CheckCircle2 className="size-3.5 text-white/80 shrink-0" />
                             <span>{feat}</span>
                           </div>
                         ))}
@@ -192,32 +172,27 @@ export default function ServicesSection(): React.JSX.Element {
                 return (
                   <div
                     key={service.title}
-                    className={`p-6 md:p-8 card rounded flex flex-col justify-between gap-6 border border-white/10 hover:border-white/30 transition-colors ${
+                    className={`p-6 md:p-8 card rounded flex flex-col justify-between gap-5 border border-white/10 hover:border-white/30 transition-colors ${
                       isLarge ? "lg:col-span-1 border-white/20" : ""
                     }`}
                   >
                     <div className="flex flex-col gap-4">
                       <div className="flex items-center gap-3">
-                        <div className="p-3 rounded card border border-white/10 text-white w-fit">
+                        <div className="p-3 rounded card border border-white/10 text-white shrink-0">
                           <Icon className="size-6" />
                         </div>
-                        <div>
-                          <h3 className="text-2xl font-bold text-cream">{service.title}</h3>
-                          <span className="text-xs text-white/70 font-medium">
-                            {service.tagline || service.titleSuffix}
-                          </span>
-                        </div>
+                        <h3 className="text-xl md:text-2xl font-bold text-cream leading-snug">{service.title}</h3>
                       </div>
 
-                      <p className="text-base text-foreground/80 leading-relaxed">
+                      <p className="text-sm md:text-base text-foreground/80 leading-relaxed">
                         {service.description}
                       </p>
                     </div>
 
                     <div className="pt-4 border-t border-white/10 flex flex-col gap-2.5">
                       {service.features.map((feat) => (
-                        <div key={feat} className="flex items-start gap-2.5 text-sm text-foreground/90">
-                          <CheckCircle2 className="size-4 text-white/80 shrink-0 mt-0.5" />
+                        <div key={feat} className="flex items-center gap-2.5 text-xs sm:text-sm text-foreground/90">
+                          <CheckCircle2 className="size-4 text-white/80 shrink-0" />
                           <span>{feat}</span>
                         </div>
                       ))}

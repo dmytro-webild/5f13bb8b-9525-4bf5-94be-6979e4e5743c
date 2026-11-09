@@ -3,7 +3,7 @@ import FaqSimple from "@/components/sections/faq/FaqSimple";
 
 export default function FaqSection(): React.JSX.Element {
   return (
-    <div id="faq" data-section="faq" className="scroll-mt-24">
+    <div id="faq" data-section="faq" className="scroll-mt-24 md:scroll-mt-28">
       <FaqSimple
         textAnimation="fade-blur"
         tag="FAQ"
@@ -23,16 +23,8 @@ export default function FaqSection(): React.JSX.Element {
             answer: "I provide managed Australian hosting featuring low latency, reliable server infrastructure, free SSL, daily backups, CMS updates, security monitoring, and post-launch support.",
           },
           {
-            question: "Do you offer SEO and growth add-ons?",
-            answer: "Yes. All websites come with built-in on-page SEO structure and meta tags from day one. I also offer growth add-ons like Google review collection systems, business automation (lead capture to CRM workflows), and engagement tools (missed-call text-back and chatbots).",
-          },
-          {
             question: "How does pricing work?",
             answer: "All projects are transparently quoted upfront after a discovery call. Clients always know where things are at with no surprise bills.",
-          },
-          {
-            question: "Where are you based?",
-            answer: "I am based in Melbourne, Australia, working directly 1-on-1 with local Australian businesses.",
           },
         ]}
       />

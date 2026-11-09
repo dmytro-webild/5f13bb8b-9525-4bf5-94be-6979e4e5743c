@@ -18,7 +18,6 @@ export default function Layout() {
         }
         navItems={[
           { name: "Services", href: "#services" },
-          { name: "What's Included", href: "#whats-included" },
           { name: "Process", href: "#process" },
           { name: "Work", href: "#work" },
           { name: "About", href: "#about" },
@@ -43,7 +42,6 @@ export default function Layout() {
 
           <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-foreground/80">
             <a href="#services" className="hover:text-white transition-colors">Services</a>
-            <a href="#whats-included" className="hover:text-white transition-colors">What's Included</a>
             <a href="#process" className="hover:text-white transition-colors">Process</a>
             <a href="#work" className="hover:text-white transition-colors">Work</a>
             <a href="#about" className="hover:text-white transition-colors">About</a>

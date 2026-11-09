@@ -9,17 +9,17 @@ html {
 }
 
 :root {
-  /* Dark theme with white accents */
-  --background: #0a0a0a;
-  --card: #141414;
-  --foreground: #f0f0f0;
-  --primary-cta: #ffffff;
-  --primary-cta-text: #0a0a0a;
-  --secondary-cta: #1a1a1a;
-  --secondary-cta-text: #f0f0f0;
-  --accent: #ffffff;
-  --background-accent: #242424;
-  --heading-cream: #ffffff;
+  /* Light theme with black text and accents */
+  --background: #ffffff;
+  --card: #f8f9fa;
+  --foreground: #000000;
+  --primary-cta: #000000;
+  --primary-cta-text: #ffffff;
+  --secondary-cta: #f1f5f9;
+  --secondary-cta-text: #000000;
+  --accent: #000000;
+  --background-accent: #f1f5f9;
+  --heading-cream: #000000;
 
   /* @layout/border-radius/soft */
   --radius: 1.5rem;
@@ -164,42 +164,43 @@ h4,
 h5,
 h6 {
   font-family: "Inter", sans-serif;
-  color: var(--heading-cream, #faf4e8);
+  color: var(--heading-cream, #000000);
 }
 
 .card {
   backdrop-filter: blur(8px);
-  background: linear-gradient(to bottom right, rgba(22, 22, 22, 0.85), rgba(16, 16, 16, 0.6));
-  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #ffffff;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px -1px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .primary-button {
-  background: #ffffff;
-  color: #0a0a0a;
+  background: #000000;
+  color: #ffffff;
   font-weight: 500;
-  box-shadow: 0 4px 16px -2px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 16px -2px rgba(0, 0, 0, 0.15);
   transition: all 0.2s ease-in-out;
 }
 
 .primary-button:hover {
-  background: #e6e6e6;
-  color: #000000;
-  box-shadow: 0 6px 24px -2px rgba(255, 255, 255, 0.35);
+  background: #222222;
+  color: #ffffff;
+  box-shadow: 0 6px 24px -2px rgba(0, 0, 0, 0.25);
   transform: translateY(-1px);
 }
 
 .secondary-button {
   backdrop-filter: blur(8px);
-  background: linear-gradient(to bottom right, rgba(28, 28, 28, 0.8), #181818);
-  color: #f0f0f0;
-  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: #f8f9fa;
+  color: #000000;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.15);
   transition: all 0.2s ease-in-out;
 }
 
 .secondary-button:hover {
-  border-color: rgba(255, 255, 255, 0.5);
-  color: #ffffff;
-  box-shadow: 0 0 12px rgba(255, 255, 255, 0.15);
+  border-color: rgba(0, 0, 0, 0.4);
+  color: #000000;
+  background: #f1f5f9;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
 }

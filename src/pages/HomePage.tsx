@@ -11,7 +11,7 @@ import ContactSection from './HomePage/sections/Contact';
 
 export default function HomePage(): React.JSX.Element {
   return (
-    <StyleProvider siteBackground="aurora" heroBackground="lightRaysCorner" buttonVariant="stagger">
+    <StyleProvider siteBackground="none" heroBackground="none" buttonVariant="stagger">
       <SiteBackgroundSlot />
 
       <HeroSection />

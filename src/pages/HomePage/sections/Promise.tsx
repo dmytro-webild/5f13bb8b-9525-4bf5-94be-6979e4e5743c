@@ -33,7 +33,7 @@ export default function ProcessSection(): React.JSX.Element {
       <section aria-label="Process section" className="py-20">
         <div className="flex flex-col gap-8 md:gap-10 w-content-width mx-auto">
           <div className="flex flex-col items-center gap-2">
-            <div className="px-3 py-1 mb-1 text-sm card rounded w-fit text-white/80 border-white/20">
+            <div className="px-3 py-1 mb-1 text-sm card rounded w-fit text-foreground/80 border-black/10">
               <p>{"Process"}</p>
             </div>
 
@@ -61,13 +61,13 @@ export default function ProcessSection(): React.JSX.Element {
                 return (
                   <div
                     key={step.title}
-                    className="relative flex flex-col justify-between gap-5 p-6 md:p-7 card rounded border border-white/10 hover:border-white/30 transition-colors h-full min-h-[220px]"
+                    className="relative flex flex-col justify-between gap-5 p-6 md:p-7 card rounded border border-black/10 hover:border-black/30 transition-colors h-full min-h-[220px]"
                   >
                     <div className="flex items-center justify-center size-12 primary-button rounded-full">
                       <Icon className="size-5 text-primary-cta-text" strokeWidth={1.75} />
                     </div>
                     <div className="flex flex-col gap-2">
-                      <h3 className="text-xl md:text-2xl font-bold text-cream leading-snug">{step.title}</h3>
+                      <h3 className="text-xl md:text-2xl font-bold text-black leading-snug">{step.title}</h3>
                       <p className="text-sm md:text-base leading-relaxed text-foreground/80">{step.description}</p>
                     </div>
                     <BorderGlow />

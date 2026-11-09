@@ -85,7 +85,7 @@ export default function ServicesSection(): React.JSX.Element {
       <section aria-label="Services section" className="py-20">
         <div className="flex flex-col gap-8 md:gap-10 w-content-width mx-auto">
           <div className="flex flex-col items-center gap-2">
-            <div className="px-3 py-1 mb-1 text-sm card rounded w-fit text-white/80 border-white/20">
+            <div className="px-3 py-1 mb-1 text-sm card rounded w-fit text-foreground/80 border-black/10">
               <p>{"Services"}</p>
             </div>
 
@@ -120,14 +120,14 @@ export default function ServicesSection(): React.JSX.Element {
                     <div
                       key={service.title}
                       ref={(el) => { cardRefs.current[idx] = el; }}
-                      className="w-full shrink-0 snap-center snap-always p-5 card rounded flex flex-col justify-between gap-4 border border-white/10 hover:border-white/30 transition-colors"
+                      className="w-full shrink-0 snap-center snap-always p-5 card rounded flex flex-col justify-between gap-4 border border-black/10 hover:border-black/30 transition-colors"
                     >
                       <div className="flex flex-col gap-3">
                         <div className="flex items-center gap-3">
-                          <div className="p-2.5 rounded card border border-white/10 text-white shrink-0">
+                          <div className="p-2.5 rounded card border border-black/10 text-black shrink-0">
                             <Icon className="size-5" />
                           </div>
-                          <h3 className="text-lg font-bold text-cream leading-tight">{service.title}</h3>
+                          <h3 className="text-lg font-bold text-black leading-tight">{service.title}</h3>
                         </div>
 
                         <p className="text-xs sm:text-sm text-foreground/80 leading-relaxed">
@@ -135,10 +135,10 @@ export default function ServicesSection(): React.JSX.Element {
                         </p>
                       </div>
 
-                      <div className="pt-3 border-t border-white/10 flex flex-col gap-2">
+                      <div className="pt-3 border-t border-black/10 flex flex-col gap-2">
                         {service.features.map((feat) => (
                           <div key={feat} className="flex items-center gap-2 text-xs text-foreground/90">
-                            <CheckCircle2 className="size-3.5 text-white/80 shrink-0" />
+                            <CheckCircle2 className="size-3.5 text-black/80 shrink-0" />
                             <span>{feat}</span>
                           </div>
                         ))}
@@ -157,7 +157,7 @@ export default function ServicesSection(): React.JSX.Element {
                     aria-label={`Go to service ${i + 1}`}
                     onClick={() => scrollToIdx(i)}
                     className={`h-2 transition-all duration-300 rounded-full cursor-pointer ${
-                      activeIdx === i ? "w-6 bg-white" : "w-2 bg-white/30"
+                      activeIdx === i ? "w-6 bg-black" : "w-2 bg-black/30"
                     }`}
                   />
                 ))}
@@ -172,16 +172,16 @@ export default function ServicesSection(): React.JSX.Element {
                 return (
                   <div
                     key={service.title}
-                    className={`p-6 md:p-8 card rounded flex flex-col justify-between gap-5 border border-white/10 hover:border-white/30 transition-colors ${
-                      isLarge ? "lg:col-span-1 border-white/20" : ""
+                    className={`p-6 md:p-8 card rounded flex flex-col justify-between gap-5 border border-black/10 hover:border-black/30 transition-colors ${
+                      isLarge ? "lg:col-span-1 border-black/20" : ""
                     }`}
                   >
                     <div className="flex flex-col gap-4">
                       <div className="flex items-center gap-3">
-                        <div className="p-3 rounded card border border-white/10 text-white shrink-0">
+                        <div className="p-3 rounded card border border-black/10 text-black shrink-0">
                           <Icon className="size-6" />
                         </div>
-                        <h3 className="text-xl md:text-2xl font-bold text-cream leading-snug">{service.title}</h3>
+                        <h3 className="text-xl md:text-2xl font-bold text-black leading-snug">{service.title}</h3>
                       </div>
 
                       <p className="text-sm md:text-base text-foreground/80 leading-relaxed">
@@ -189,10 +189,10 @@ export default function ServicesSection(): React.JSX.Element {
                       </p>
                     </div>
 
-                    <div className="pt-4 border-t border-white/10 flex flex-col gap-2.5">
+                    <div className="pt-4 border-t border-black/10 flex flex-col gap-2.5">
                       {service.features.map((feat) => (
                         <div key={feat} className="flex items-center gap-2.5 text-xs sm:text-sm text-foreground/90">
-                          <CheckCircle2 className="size-4 text-white/80 shrink-0" />
+                          <CheckCircle2 className="size-4 text-black/80 shrink-0" />
                           <span>{feat}</span>
                         </div>
                       ))}

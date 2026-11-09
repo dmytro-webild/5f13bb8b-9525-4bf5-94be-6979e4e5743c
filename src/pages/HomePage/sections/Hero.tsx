@@ -3,7 +3,7 @@ import HeroSplit from "@/components/sections/hero/HeroSplit";
 
 export default function HeroSection(): React.JSX.Element {
   return (
-    <div id="hero" data-section="hero" className="scroll-mt-28 md:scroll-mt-36 pt-6 md:pt-10">
+    <div id="hero" data-section="hero" className="scroll-mt-24 md:scroll-mt-28">
       <HeroSplit
         textAnimation="fade-blur"
         tag="Melbourne · Web Design & Hosting"

@@ -5,8 +5,8 @@ import { CheckCircle2, Globe } from "lucide-react";
 
 export default function WorkSection(): React.JSX.Element {
   return (
-    <div id="work" data-section="work" className="scroll-mt-28 md:scroll-mt-36 pt-6 md:pt-10">
-      <section aria-label="Work section" className="py-20">
+    <div id="work" data-section="work" className="scroll-mt-24 md:scroll-mt-28">
+      <section aria-label="Work section" className="py-8 md:py-12">
         <div className="flex flex-col gap-8 md:gap-10 w-content-width mx-auto">
           <div className="flex flex-col items-center gap-2">
             <div className="px-3 py-1 mb-1 text-sm card rounded w-fit text-foreground/80 border-black/10">

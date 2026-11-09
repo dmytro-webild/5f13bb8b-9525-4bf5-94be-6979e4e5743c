@@ -3,7 +3,7 @@ import FaqSimple from "@/components/sections/faq/FaqSimple";
 
 export default function FaqSection(): React.JSX.Element {
   return (
-    <div id="faq" data-section="faq" className="scroll-mt-28 md:scroll-mt-36 pt-6 md:pt-10">
+    <div id="faq" data-section="faq" className="scroll-mt-24 md:scroll-mt-28">
       <FaqSimple
         textAnimation="fade-blur"
         tag="FAQ"

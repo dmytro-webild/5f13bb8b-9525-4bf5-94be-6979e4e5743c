@@ -13,7 +13,7 @@ export default function HeroSection(): React.JSX.Element {
         secondaryButton={{ text: "Explore services", href: "#services" }}
         imageSrc="https://storage.googleapis.com/webild/users/user_3FwL5pfkeyOX14T98rYzVwLBGK9/uploaded-1794144853094-88vtnccl.png?_wi=1"
         containerClassName="bg-transparent border-0 shadow-none p-0 overflow-visible"
-        imageClassName="object-contain w-auto h-auto max-h-24 sm:max-h-36 md:max-h-[380px] mx-auto rounded-none brightness-0 bg-transparent border-0 shadow-none drop-shadow-2xl"
+        imageClassName="object-contain w-auto h-auto max-h-24 sm:max-h-36 md:max-h-[380px] mx-auto rounded-none brightness-0 invert bg-transparent border-0 shadow-none drop-shadow-2xl"
       />
     </div>
   );

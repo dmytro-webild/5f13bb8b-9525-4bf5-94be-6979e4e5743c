@@ -30,7 +30,7 @@ const TeamStackedCards = ({
   <section aria-label="Team section" className="py-8 md:py-12">
     <div className="flex flex-col gap-8 md:gap-10 w-content-width mx-auto">
       <div className="flex flex-col items-center gap-2">
-        <div className="px-3 py-1 mb-1 text-sm card rounded w-fit">
+        <div className="px-3 py-1 mb-1 text-sm card bg-[#EE3678]/10 text-[#EE3678] border border-[#EE3678]/30 rounded font-medium w-fit">
           <p>{tag}</p>
         </div>
 
@@ -39,7 +39,7 @@ const TeamStackedCards = ({
           variant={textAnimation}
           gradientText={true}
           tag="h2"
-          className="md:max-w-8/10 text-6xl 2xl:text-7xl leading-[1.15] font-semibold text-center text-balance"
+          className="md:max-w-8/10 text-6xl 2xl:text-7xl leading-[1.15] font-semibold text-center text-balance text-[#F4F4F5]"
         />
 
         <TextAnimation
@@ -47,7 +47,7 @@ const TeamStackedCards = ({
           variant={textAnimation}
           gradientText={false}
           tag="p"
-          className="md:max-w-7/10 text-lg md:text-xl leading-snug text-center text-balance"
+          className="md:max-w-7/10 text-lg md:text-xl leading-snug text-center text-balance text-[#A1A1AA]"
         />
 
         {(primaryButton || secondaryButton) && (
@@ -66,16 +66,16 @@ const TeamStackedCards = ({
                 <div className="p-2 xl:p-3 2xl:p-4 mb-4 xl:mb-5 2xl:mb-6 w-full aspect-square card rounded-full overflow-hidden">
                   <ImageOrVideo imageSrc={member.imageSrc} videoSrc={member.videoSrc} className="rounded-full!" />
                 </div>
-                <span className="w-4/5 text-2xl font-semibold leading-snug truncate">{member.name}</span>
-                <span className="w-4/5 text-base leading-snug opacity-75 truncate">{member.role}</span>
+                <span className="w-4/5 text-2xl font-semibold leading-snug truncate text-[#F4F4F5]">{member.name}</span>
+                <span className="w-4/5 text-base leading-snug text-[#A1A1AA] truncate">{member.role}</span>
               </>
             ) : (
-              <div className="px-4 py-2 card rounded-full border border-black/10 flex flex-wrap items-center justify-center gap-2 text-sm md:text-base font-medium">
+              <div className="px-4 py-2 card rounded-full border border-white/10 flex flex-wrap items-center justify-center gap-2 text-sm md:text-base font-medium text-[#F4F4F5]">
                 <span>{member.name}</span>
                 {member.role && (
                   <>
                     <span className="opacity-40">•</span>
-                    <span className="opacity-75">{member.role}</span>
+                    <span className="text-[#A1A1AA]">{member.role}</span>
                   </>
                 )}
               </div>

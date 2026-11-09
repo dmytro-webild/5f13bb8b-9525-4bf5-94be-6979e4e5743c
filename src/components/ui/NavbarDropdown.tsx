@@ -75,7 +75,7 @@ const NavbarDropdown = ({ logo, navItems, ctaButton }: NavbarDropdownProps) => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.3, ease: [0.4, 0, 0.2, 1] }}
-            className="absolute top-full right-2 xl:right-3 2xl:right-4 -mt-1 px-4 py-1 w-3/4 md:w-3/10 2xl:w-25/100 rounded primary-button"
+            className="absolute top-full right-2 xl:right-3 2xl:right-4 -mt-1 px-4 py-1 w-3/4 md:w-3/10 2xl:w-25/100 rounded card bg-[#1A1A1C] border border-white/10 shadow-2xl"
           >
             {navItems.map((item, index) => (
               <div key={item.name}>
@@ -84,16 +84,16 @@ const NavbarDropdown = ({ logo, navItems, ctaButton }: NavbarDropdownProps) => {
                   onClick={(e) => handleNavClick(e, item.href, () => setMenuOpen(false))}
                   className="group flex items-center justify-between py-3 w-full"
                 >
-                  <span className="text-base text-primary-cta-text group-hover:ml-2 transition-[margin] duration-300">
+                  <span className="text-base text-[#F4F4F5] group-hover:text-[#EE3678] group-hover:ml-2 transition-all duration-300">
                     {item.name}
                   </span>
                   <ArrowUpRight
-                    className="h-(--text-base) w-auto text-primary-cta-text group-hover:rotate-45 group-hover:mr-2 transition-all duration-300"
+                    className="h-(--text-base) w-auto text-[#A1A1AA] group-hover:text-[#EE3678] group-hover:rotate-45 group-hover:mr-2 transition-all duration-300"
                     strokeWidth={1.75}
                   />
                 </a>
                 {index < navItems.length - 1 && (
-                  <div className="h-px bg-primary-cta-text/20" />
+                  <div className="h-px bg-white/10" />
                 )}
               </div>
             ))}

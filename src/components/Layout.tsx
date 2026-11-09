@@ -13,7 +13,7 @@ export default function Layout() {
           <img
             src="https://storage.googleapis.com/webild/users/user_3FwL5pfkeyOX14T98rYzVwLBGK9/uploaded-1794144853094-88vtnccl.png"
             alt="Cyans Agency Logo"
-            className="h-8 w-auto object-contain brightness-0"
+            className="w-[120px] max-w-full h-auto sm:w-auto sm:h-8 object-contain brightness-0 my-auto shrink-0"
           />
         }
         navItems={[

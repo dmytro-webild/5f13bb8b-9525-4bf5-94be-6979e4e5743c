@@ -29,7 +29,7 @@ const HeroSplit = ({
   containerClassName,
 }: HeroSplitProps) => {
   return (
-    <section aria-label="Hero section" className="relative flex items-center min-h-fit md:h-svh pt-28 pb-12 md:py-0">
+    <section aria-label="Hero section" className="relative flex items-center min-h-fit pt-24 pb-8 md:pt-28 md:pb-12">
       <HeroBackgroundSlot />
       <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16 w-content-width mx-auto">
         <div className="w-full md:w-1/2">
@@ -65,7 +65,7 @@ const HeroSplit = ({
           variant="slide-up"
           delay={0.2}
           className={cls(
-            "w-full md:w-1/2 flex items-center justify-center shrink-0 mt-2 md:mt-0",
+            "hidden md:flex w-full md:w-1/2 items-center justify-center shrink-0 mt-2 md:mt-0",
             containerClassName ?? "p-4 xl:p-6 card rounded overflow-hidden"
           )}
         >

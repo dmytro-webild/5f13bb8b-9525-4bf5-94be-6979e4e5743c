@@ -13,6 +13,13 @@ function getPageComponent(pageFile: string) {
   return lazy(loader as () => Promise<{ default: React.ComponentType }>)
 }
 
+// ─── Render-state probe ────────────────────────────────────────────────────
+// After every HMR (and on first mount) the iframe reports back to a Vite
+// dev-only middleware whether the page actually rendered. Bob-AI reads the
+// resulting file from inside the sandbox after each commit and uses it to
+// detect "blank preview" / "React threw on mount" failures that escape the
+// pre-commit gate (esbuild + tsc see only static errors). Sandbox-only —
+// public deploys never iframe themselves so the probe stays silent.
 const RENDER_STATUS_URL = '/__webild/render-status'
 const RENDER_PROBE_DELAY_MS = 1500
 const RENDER_PROBE_MIN_TEXT_LEN = 30
@@ -135,6 +142,10 @@ function useRenderProbe() {
   }, [])
 }
 
+// Selection bridge: Alt+click on a `[data-webild-section]` block posts the
+// section name to the parent (Webild editor) so the next /edit request can
+// be scoped surgically. Sandbox-only — the Webild editor is the parent;
+// public visitors hitting the deployed site never trigger this.
 function useWebildSelectionBridge() {
   useEffect(() => {
     if (typeof window === 'undefined') return
@@ -160,6 +171,12 @@ function useWebildSelectionBridge() {
   }, [])
 }
 
+// Open external links in a new tab. Generated content (and AI edits) frequently
+// add raw `<a href="https://other-site">` anchors; without this they'd navigate
+// the user's own site away in the same tab. A capture-phase delegate sets
+// target/rel on any cross-origin http(s) anchor right before navigation, so the
+// browser opens it in a new tab. Same-origin links and in-page anchors are left
+// untouched; CTAs routed through useButtonClick already handle this themselves.
 function useExternalLinksNewTab() {
   useEffect(() => {
     if (typeof document === 'undefined') return

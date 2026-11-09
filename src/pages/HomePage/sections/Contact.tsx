@@ -6,8 +6,8 @@ import { Mail, Calendar, MapPin } from "lucide-react";
 
 export default function ContactSection(): React.JSX.Element {
   return (
-    <div data-webild-section="contact" data-section="contact" id="contact" className="scroll-mt-28 md:scroll-mt-36 pt-6 md:pt-10">
-      <section aria-label="Contact and Booking section" className="py-20">
+    <div data-webild-section="contact" data-section="contact" id="contact" className="scroll-mt-24 md:scroll-mt-28">
+      <section aria-label="Contact and Booking section" className="py-8 md:py-12">
         <div className="w-content-width mx-auto flex flex-col gap-8 md:gap-10">
           <div className="flex flex-col items-center gap-2">
             <div className="px-3 py-1 mb-1 text-sm card rounded w-fit text-foreground/80 border-black/10">

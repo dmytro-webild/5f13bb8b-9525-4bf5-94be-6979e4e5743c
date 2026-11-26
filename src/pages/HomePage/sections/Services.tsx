@@ -1,13 +1,15 @@
 import React, { useState, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import TextAnimation from "@/components/ui/TextAnimation";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 import Button from "@/components/ui/Button";
-import { Layout, Server, Search, ShieldCheck, Zap, CheckCircle2 } from 'lucide-react';
+import { Layout, MapPin, PhoneMissed, Zap, CheckCircle2, ArrowRight } from 'lucide-react';
 
 const services = [
   {
     icon: Layout,
-    title: "Website Design & Development",
+    title: "Websites",
+    link: "/services/websites",
     description: "Bespoke, conversion-focused websites built to turn visitors into paying clients.",
     features: [
       "Custom responsive design & UX",
@@ -16,43 +18,36 @@ const services = [
     ]
   },
   {
-    icon: Server,
-    title: "Website Hosting",
-    description: "Managed local Australian hosting for faster load times, 99.9% uptime, and reliable security.",
+    icon: MapPin,
+    title: "Google Business Profile setup",
+    link: "/services/google-business-profile",
+    description: "Complete Google Business Profile setup, verification, and local map pack optimization.",
     features: [
-      "Australian data centre",
-      "Free SSL certificate & daily backups",
-      "Updates & security monitoring",
+      "Top 3 local map pack ranking",
+      "Review generation funnels",
+      "Local suburb & category setup",
     ]
   },
   {
-    icon: Search,
-    title: "SEO Optimisation",
-    description: "Strategic site structure and keyword optimisation to help your business rank higher on Google.",
+    icon: PhoneMissed,
+    title: "Missed-call text-back",
+    link: "/services/missed-call-text-back",
+    description: "Instant SMS response sent automatically to any customer who calls when you're busy.",
     features: [
-      "On-page SEO from day one",
-      "Optimised meta titles & tags",
-      "Google Search Console indexing",
-    ]
-  },
-  {
-    icon: ShieldCheck,
-    title: "Ongoing Maintenance",
-    description: "Proactive CMS updates and technical support to keep your site fast, safe, and up to date.",
-    features: [
-      "Regular CMS & security updates",
-      "Uptime & performance checks",
-      "Priority technical assistance",
+      "Sub-5 second automated SMS",
+      "Never lose a caller lead again",
+      "Custom message & booking links",
     ]
   },
   {
     icon: Zap,
-    title: "Growth Add-Ons",
-    description: "Automation workflows and engagement tools that capture leads and boost customer reviews.",
+    title: "Automations",
+    link: "/services/automations",
+    description: "Streamlined workflow automations for lead generation, CRM sync, and Google reviews.",
     features: [
-      "Lead capture & CRM automation",
-      "Google Review collection systems",
-      "Missed-call text-back & chat bots",
+      "Lead routing & SMS alerts",
+      "Automated review collection",
+      "Calendly & CRM integration",
     ]
   }
 ];
@@ -90,7 +85,7 @@ export default function ServicesSection(): React.JSX.Element {
             </div>
 
             <TextAnimation
-              text={"Core Web Design, Hosting & Automation Offerings"}
+              text={"Web Design, Map Rankings & Automations"}
               variant={"fade-blur"}
               gradientText={true}
               tag="h2"
@@ -98,7 +93,7 @@ export default function ServicesSection(): React.JSX.Element {
             />
 
             <TextAnimation
-              text={"I provide end-to-end web solutions tailored strictly to local Australian businesses."}
+              text={"Tailored web design, local SEO, and lead automation solutions for Melbourne tradies and local businesses."}
               variant={"fade-blur"}
               gradientText={false}
               tag="p"
@@ -142,6 +137,12 @@ export default function ServicesSection(): React.JSX.Element {
                             <span>{feat}</span>
                           </div>
                         ))}
+                        <Link
+                          to={service.link}
+                          className="mt-2 text-xs text-[#EE3678] hover:underline inline-flex items-center gap-1 font-semibold"
+                        >
+                          Learn more <ArrowRight className="size-3" />
+                        </Link>
                       </div>
                     </div>
                   );
@@ -165,37 +166,40 @@ export default function ServicesSection(): React.JSX.Element {
             </div>
 
             {/* Desktop Grid */}
-            <div className="hidden md:grid grid-cols-2 lg:grid-cols-3 gap-6">
-              {services.map((service, idx) => {
+            <div className="hidden md:grid grid-cols-2 lg:grid-cols-4 gap-6">
+              {services.map((service) => {
                 const Icon = service.icon;
-                const isLarge = idx === 0 || idx === 1;
                 return (
                   <div
                     key={service.title}
-                    className={`p-6 md:p-8 card rounded flex flex-col justify-between gap-5 border border-white/10 hover:border-[#EE3678]/40 transition-colors ${
-                      isLarge ? "lg:col-span-1 border-white/20" : ""
-                    }`}
+                    className="p-6 card rounded flex flex-col justify-between gap-5 border border-white/10 hover:border-[#EE3678]/40 transition-colors"
                   >
                     <div className="flex flex-col gap-4">
                       <div className="flex items-center gap-3">
                         <div className="p-3 rounded card border border-white/10 text-[#EE3678] shrink-0">
                           <Icon className="size-6" />
                         </div>
-                        <h3 className="text-xl md:text-2xl font-bold text-[#F4F4F5] leading-snug">{service.title}</h3>
+                        <h3 className="text-xl font-bold text-[#F4F4F5] leading-snug">{service.title}</h3>
                       </div>
 
-                      <p className="text-sm md:text-base text-[#A1A1AA] leading-relaxed">
+                      <p className="text-sm text-[#A1A1AA] leading-relaxed">
                         {service.description}
                       </p>
                     </div>
 
                     <div className="pt-4 border-t border-white/10 flex flex-col gap-2.5">
                       {service.features.map((feat) => (
-                        <div key={feat} className="flex items-center gap-2.5 text-xs sm:text-sm text-[#F4F4F5]">
+                        <div key={feat} className="flex items-center gap-2.5 text-xs text-[#F4F4F5]">
                           <CheckCircle2 className="size-4 text-[#EE3678] shrink-0" />
                           <span>{feat}</span>
                         </div>
                       ))}
+                      <Link
+                        to={service.link}
+                        className="mt-2 text-sm text-[#EE3678] hover:underline inline-flex items-center gap-1 font-semibold"
+                      >
+                        Learn more <ArrowRight className="size-4" />
+                      </Link>
                     </div>
                   </div>
                 );
@@ -204,14 +208,9 @@ export default function ServicesSection(): React.JSX.Element {
 
             <div className="flex flex-wrap items-center justify-center gap-4 pt-8">
               <Button
-                text="Get a website quote"
+                text="Book a strategy call"
                 href="https://calendly.com/josiabatoni/30min"
                 variant="primary"
-              />
-              <Button
-                text="Discuss hosting options"
-                href="https://calendly.com/josiabatoni/30min"
-                variant="secondary"
               />
             </div>
           </ScrollReveal>

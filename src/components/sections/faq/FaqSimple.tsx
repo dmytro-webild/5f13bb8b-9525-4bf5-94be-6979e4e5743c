@@ -47,7 +47,7 @@ const FaqSimple = ({
             variant={textAnimation}
             gradientText={true}
             tag="h2"
-            className="md:max-w-8/10 text-6xl 2xl:text-7xl leading-[1.15] font-semibold text-center text-balance text-[#F4F4F5]"
+            className="md:max-w-8/10 text-6xl 2xl:text-7xl leading-[1.15] font-semibold text-center text-balance text-black"
           />
 
           <TextAnimation
@@ -55,7 +55,7 @@ const FaqSimple = ({
             variant={textAnimation}
             gradientText={false}
             tag="p"
-            className="md:max-w-7/10 text-lg md:text-xl leading-snug text-center text-balance text-[#A1A1AA]"
+            className="md:max-w-7/10 text-lg md:text-xl leading-snug text-center text-balance text-zinc-600"
           />
 
           {(primaryButton || secondaryButton) && (
@@ -71,10 +71,10 @@ const FaqSimple = ({
             <div
               key={index}
               onClick={() => handleToggle(index)}
-              className="p-3 xl:p-3.5 2xl:p-4 rounded card cursor-pointer select-none border border-white/10 hover:border-[#EE3678]/40 transition-colors"
+              className="p-3 xl:p-3.5 2xl:p-4 rounded card cursor-pointer select-none border border-black/10 hover:border-[#EE3678]/40 transition-colors"
             >
               <div className="flex items-center justify-between gap-3 xl:gap-3.5 2xl:gap-4">
-                <h3 className="text-lg md:text-xl font-medium leading-snug text-[#F4F4F5]">{item.question}</h3>
+                <h3 className="text-lg md:text-xl font-medium leading-snug text-black">{item.question}</h3>
                 <div className="flex shrink-0 items-center justify-center size-8 md:size-9 rounded primary-button">
                   <Plus
                     className={cls(
@@ -94,7 +94,7 @@ const FaqSimple = ({
                     transition={{ duration: 0.3, ease: "easeOut" }}
                     className="overflow-hidden"
                   >
-                    <p className="pt-2 text-base leading-snug text-[#A1A1AA]">{item.answer}</p>
+                    <p className="pt-2 text-base leading-snug text-zinc-600">{item.answer}</p>
                   </motion.div>
                 )}
               </AnimatePresence>

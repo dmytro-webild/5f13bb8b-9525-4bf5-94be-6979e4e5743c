@@ -40,14 +40,14 @@ export default function AutomationsPage(): React.JSX.Element {
             variant="fade-blur"
             gradientText={true}
             tag="h1"
-            className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#F4F4F5] leading-tight"
+            className="text-4xl sm:text-5xl md:text-6xl font-bold text-black leading-tight"
           />
           <TextAnimation
             text="Automate repetitive admin, lead routing, review collection, and appointment booking so you can spend less time on computer tasks and more time growing your business."
             variant="fade-blur"
             gradientText={false}
             tag="p"
-            className="text-lg md:text-xl text-[#A1A1AA] max-w-2xl"
+            className="text-lg md:text-xl text-zinc-600 max-w-2xl"
           />
           <div className="mt-4">
             <Button text="Automate Your Business" href="https://calendly.com/josiabatoni/30min" variant="primary" />
@@ -56,32 +56,32 @@ export default function AutomationsPage(): React.JSX.Element {
 
         <ScrollReveal variant="slide-up">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <Card className="p-6 border border-white/10 flex flex-col gap-4 bg-[#1A1A1C]">
-              <div className="p-3 w-fit rounded card border border-white/10 text-[#EE3678]">
+            <Card className="p-6 border border-black/10 flex flex-col gap-4 bg-white">
+              <div className="p-3 w-fit rounded card border border-black/10 text-[#EE3678]">
                 <Star className="size-6" />
               </div>
-              <h3 className="text-xl font-bold text-[#F4F4F5]">Automated Review Funnels</h3>
-              <p className="text-sm text-[#A1A1AA]">
+              <h3 className="text-xl font-bold text-black">Automated Review Funnels</h3>
+              <p className="text-sm text-zinc-600">
                 Automatically prompt happy clients to leave 5-star Google reviews after job completion, growing your brand reputation passively.
               </p>
             </Card>
 
-            <Card className="p-6 border border-white/10 flex flex-col gap-4 bg-[#1A1A1C]">
-              <div className="p-3 w-fit rounded card border border-white/10 text-[#EE3678]">
+            <Card className="p-6 border border-black/10 flex flex-col gap-4 bg-white">
+              <div className="p-3 w-fit rounded card border border-black/10 text-[#EE3678]">
                 <Zap className="size-6" />
               </div>
-              <h3 className="text-xl font-bold text-[#F4F4F5]">Instant Lead Routing</h3>
-              <p className="text-sm text-[#A1A1AA]">
+              <h3 className="text-xl font-bold text-black">Instant Lead Routing</h3>
+              <p className="text-sm text-zinc-600">
                 Route web inquiries, contact forms, and email requests immediately to your mobile via SMS or push notification so no inquiry sits unread.
               </p>
             </Card>
 
-            <Card className="p-6 border border-white/10 flex flex-col gap-4 bg-[#1A1A1C]">
-              <div className="p-3 w-fit rounded card border border-white/10 text-[#EE3678]">
+            <Card className="p-6 border border-black/10 flex flex-col gap-4 bg-white">
+              <div className="p-3 w-fit rounded card border border-black/10 text-[#EE3678]">
                 <Cpu className="size-6" />
               </div>
-              <h3 className="text-xl font-bold text-[#F4F4F5]">CRM & Calendar Sync</h3>
-              <p className="text-sm text-[#A1A1AA]">
+              <h3 className="text-xl font-bold text-black">CRM & Calendar Sync</h3>
+              <p className="text-sm text-zinc-600">
                 Connect your website forms seamlessly to Calendly, Google Calendar, HubSpot, or your custom CRM to eliminate double bookings.
               </p>
             </Card>
@@ -89,9 +89,9 @@ export default function AutomationsPage(): React.JSX.Element {
         </ScrollReveal>
 
         <ScrollReveal variant="slide-up">
-          <div className="p-8 md:p-12 card border border-white/10 rounded-xl bg-[#1A1A1C] flex flex-col md:flex-row items-center justify-between gap-8">
+          <div className="p-8 md:p-12 card border border-black/10 rounded-xl bg-white flex flex-col md:flex-row items-center justify-between gap-8">
             <div className="flex flex-col gap-4 max-w-xl">
-              <h2 className="text-2xl md:text-3xl font-bold text-[#F4F4F5]">Custom Automations Built For You</h2>
+              <h2 className="text-2xl md:text-3xl font-bold text-black">Custom Automations Built For You</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
                 {[
                   "Google Review SMS & Email Campaigns",
@@ -101,7 +101,7 @@ export default function AutomationsPage(): React.JSX.Element {
                   "Missed Call Lead Captures",
                   "Full Technical Setup & Testing"
                 ].map((item) => (
-                  <div key={item} className="flex items-center gap-2 text-sm text-[#F4F4F5]">
+                  <div key={item} className="flex items-center gap-2 text-sm text-black">
                     <CheckCircle2 className="size-4 text-[#EE3678] shrink-0" />
                     <span>{item}</span>
                   </div>

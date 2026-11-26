@@ -40,14 +40,14 @@ export default function GoogleBusinessProfilePage(): React.JSX.Element {
             variant="fade-blur"
             gradientText={true}
             tag="h1"
-            className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#F4F4F5] leading-tight"
+            className="text-4xl sm:text-5xl md:text-6xl font-bold text-black leading-tight"
           />
           <TextAnimation
             text="Get found when local customers search for your services in Melbourne. We claim, verify, configure, and optimize your Google Business Profile for top map rankings."
             variant="fade-blur"
             gradientText={false}
             tag="p"
-            className="text-lg md:text-xl text-[#A1A1AA] max-w-2xl"
+            className="text-lg md:text-xl text-zinc-600 max-w-2xl"
           />
           <div className="mt-4">
             <Button text="Claim Your Google Profile" href="https://calendly.com/josiabatoni/30min" variant="primary" />
@@ -56,32 +56,32 @@ export default function GoogleBusinessProfilePage(): React.JSX.Element {
 
         <ScrollReveal variant="slide-up">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <Card className="p-6 border border-white/10 flex flex-col gap-4 bg-[#1A1A1C]">
-              <div className="p-3 w-fit rounded card border border-white/10 text-[#EE3678]">
+            <Card className="p-6 border border-black/10 flex flex-col gap-4 bg-white">
+              <div className="p-3 w-fit rounded card border border-black/10 text-[#EE3678]">
                 <MapPin className="size-6" />
               </div>
-              <h3 className="text-xl font-bold text-[#F4F4F5]">Local Map Pack Placement</h3>
-              <p className="text-sm text-[#A1A1AA]">
+              <h3 className="text-xl font-bold text-black">Local Map Pack Placement</h3>
+              <p className="text-sm text-zinc-600">
                 Rank in Google's coveted 3-Map Pack where over 60% of local service calls originate when customers search near them.
               </p>
             </Card>
 
-            <Card className="p-6 border border-white/10 flex flex-col gap-4 bg-[#1A1A1C]">
-              <div className="p-3 w-fit rounded card border border-white/10 text-[#EE3678]">
+            <Card className="p-6 border border-black/10 flex flex-col gap-4 bg-white">
+              <div className="p-3 w-fit rounded card border border-black/10 text-[#EE3678]">
                 <Star className="size-6" />
               </div>
-              <h3 className="text-xl font-bold text-[#F4F4F5]">Review Generation Setup</h3>
-              <p className="text-sm text-[#A1A1AA]">
+              <h3 className="text-xl font-bold text-black">Review Generation Setup</h3>
+              <p className="text-sm text-zinc-600">
                 Establish automated review collection requests to build 5-star social proof that wins new clients over your competitors.
               </p>
             </Card>
 
-            <Card className="p-6 border border-white/10 flex flex-col gap-4 bg-[#1A1A1C]">
-              <div className="p-3 w-fit rounded card border border-white/10 text-[#EE3678]">
+            <Card className="p-6 border border-black/10 flex flex-col gap-4 bg-white">
+              <div className="p-3 w-fit rounded card border border-black/10 text-[#EE3678]">
                 <TrendingUp className="size-6" />
               </div>
-              <h3 className="text-xl font-bold text-[#F4F4F5]">Category & Keyword Audit</h3>
-              <p className="text-sm text-[#A1A1AA]">
+              <h3 className="text-xl font-bold text-black">Category & Keyword Audit</h3>
+              <p className="text-sm text-zinc-600">
                 Target high-intent primary and secondary business categories, service areas, and search terms specific to your Melbourne suburb.
               </p>
             </Card>
@@ -89,9 +89,9 @@ export default function GoogleBusinessProfilePage(): React.JSX.Element {
         </ScrollReveal>
 
         <ScrollReveal variant="slide-up">
-          <div className="p-8 md:p-12 card border border-white/10 rounded-xl bg-[#1A1A1C] flex flex-col md:flex-row items-center justify-between gap-8">
+          <div className="p-8 md:p-12 card border border-black/10 rounded-xl bg-white flex flex-col md:flex-row items-center justify-between gap-8">
             <div className="flex flex-col gap-4 max-w-xl">
-              <h2 className="text-2xl md:text-3xl font-bold text-[#F4F4F5]">How We Boost Your Local Visibility</h2>
+              <h2 className="text-2xl md:text-3xl font-bold text-black">How We Boost Your Local Visibility</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
                 {[
                   "Profile Verification Assistance",
@@ -101,7 +101,7 @@ export default function GoogleBusinessProfilePage(): React.JSX.Element {
                   "NAP Consistency Sync Across Web",
                   "Monthly Performance Insights"
                 ].map((item) => (
-                  <div key={item} className="flex items-center gap-2 text-sm text-[#F4F4F5]">
+                  <div key={item} className="flex items-center gap-2 text-sm text-black">
                     <CheckCircle2 className="size-4 text-[#EE3678] shrink-0" />
                     <span>{item}</span>
                   </div>

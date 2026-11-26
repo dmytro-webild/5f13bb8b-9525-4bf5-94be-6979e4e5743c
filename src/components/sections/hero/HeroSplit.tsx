@@ -43,7 +43,7 @@ const HeroSplit = ({
               variant={textAnimation}
               gradientText={true}
               tag="h1"
-              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl 2xl:text-8xl leading-tight font-semibold text-center md:text-left text-balance max-w-2xl text-[#F4F4F5]"
+              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl 2xl:text-8xl leading-tight font-semibold text-center md:text-left text-balance max-w-2xl text-black"
             />
 
             <TextAnimation
@@ -51,7 +51,7 @@ const HeroSplit = ({
               variant={textAnimation}
               gradientText={false}
               tag="p"
-              className="md:max-w-8/10 text-base sm:text-lg md:text-xl leading-snug text-center md:text-left text-balance text-[#A1A1AA]"
+              className="md:max-w-8/10 text-base sm:text-lg md:text-xl leading-snug text-center md:text-left text-balance text-zinc-600"
             />
 
             <div className="flex flex-wrap max-md:justify-center gap-3 mt-2 md:mt-3">

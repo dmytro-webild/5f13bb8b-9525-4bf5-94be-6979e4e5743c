@@ -42,7 +42,7 @@ export default function ProcessSection(): React.JSX.Element {
               variant={"fade-blur"}
               gradientText={true}
               tag="h2"
-              className="md:max-w-8/10 text-4xl sm:text-5xl md:text-6xl 2xl:text-7xl leading-[1.15] font-semibold text-center text-balance text-[#F4F4F5]"
+              className="md:max-w-8/10 text-4xl sm:text-5xl md:text-6xl 2xl:text-7xl leading-[1.15] font-semibold text-center text-balance text-black"
             />
 
             <TextAnimation
@@ -50,7 +50,7 @@ export default function ProcessSection(): React.JSX.Element {
               variant={"fade-blur"}
               gradientText={false}
               tag="p"
-              className="md:max-w-7/10 text-base sm:text-lg md:text-xl leading-snug text-center text-balance text-[#A1A1AA]"
+              className="md:max-w-7/10 text-base sm:text-lg md:text-xl leading-snug text-center text-balance text-zinc-600"
             />
           </div>
 
@@ -61,14 +61,14 @@ export default function ProcessSection(): React.JSX.Element {
                 return (
                   <div
                     key={step.title}
-                    className="relative flex flex-col justify-between gap-5 p-6 md:p-7 card rounded border border-white/10 hover:border-[#EE3678]/40 transition-colors h-full min-h-[220px]"
+                    className="relative flex flex-col justify-between gap-5 p-6 md:p-7 card rounded border border-black/10 hover:border-[#EE3678]/40 transition-colors h-full min-h-[220px]"
                   >
                     <div className="flex items-center justify-center size-12 primary-button rounded-full">
                       <Icon className="size-5 text-white" strokeWidth={1.75} />
                     </div>
                     <div className="flex flex-col gap-2">
-                      <h3 className="text-xl md:text-2xl font-bold text-[#F4F4F5] leading-snug">{step.title}</h3>
-                      <p className="text-sm md:text-base leading-relaxed text-[#A1A1AA]">{step.description}</p>
+                      <h3 className="text-xl md:text-2xl font-bold text-black leading-snug">{step.title}</h3>
+                      <p className="text-sm md:text-base leading-relaxed text-zinc-600">{step.description}</p>
                     </div>
                     <BorderGlow />
                   </div>

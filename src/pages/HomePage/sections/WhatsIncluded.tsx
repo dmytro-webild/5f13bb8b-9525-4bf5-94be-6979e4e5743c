@@ -42,7 +42,7 @@ export default function WhatsIncludedSection(): React.JSX.Element {
       <section aria-label="What's Included section" className="py-20">
         <div className="flex flex-col gap-8 md:gap-10 w-content-width mx-auto">
           <div className="flex flex-col items-center gap-2">
-            <div className="px-3 py-1 mb-1 text-sm card rounded w-fit text-white/80 border-white/20">
+            <div className="px-3 py-1 mb-1 text-sm card rounded w-fit text-zinc-600 border-black/20">
               <p>{"What's Included"}</p>
             </div>
 
@@ -70,9 +70,9 @@ export default function WhatsIncludedSection(): React.JSX.Element {
                 return (
                   <div
                     key={item.title}
-                    className="p-6 card rounded flex flex-col gap-3 border border-white/10 hover:border-white/30 transition-colors"
+                    className="p-6 card rounded flex flex-col gap-3 border border-black/10 hover:border-black/30 transition-colors"
                   >
-                    <div className="p-2.5 rounded card w-fit border border-white/10 text-white">
+                    <div className="p-2.5 rounded card w-fit border border-black/10 text-black">
                       <Icon className="size-5" />
                     </div>
                     <h3 className="text-xl font-semibold text-cream">{item.title}</h3>

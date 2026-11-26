@@ -10,16 +10,16 @@ html {
 
 :root {
   /* Dark theme */
-  --background: #e3deea;
-  --card: #ffffff;
-  --foreground: #27231f;
+  --background: #0F0F10;
+  --card: #1A1A1C;
+  --foreground: #F4F4F5;
   --muted: #A1A1AA;
-  --primary-cta: #27231f;
-  --primary-cta-text: #e3deea;
-  --secondary-cta: #ffffff;
-  --secondary-cta-text: #27231f;
-  --accent: #c68a62;
-  --background-accent: #c68a62;
+  --primary-cta: #EE3678;
+  --primary-cta-text: #ffffff;
+  --secondary-cta: #27272A;
+  --secondary-cta-text: #F4F4F5;
+  --accent: #EE3678;
+  --background-accent: #18181B;
   --heading-cream: #F4F4F5;
 
   /* @layout/border-radius/soft */

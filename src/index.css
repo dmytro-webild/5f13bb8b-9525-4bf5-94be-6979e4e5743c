@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Mulish:wght@400;500;600;700&display=swap');
 /* Web Agency - Dark Monochrome */
 @import "tailwindcss";
 @import "./styles/masks.css";
@@ -11,16 +10,16 @@ html {
 
 :root {
   /* Dark theme */
-  --background: #f5faff;
+  --background: #e3deea;
   --card: #ffffff;
-  --foreground: #001122;
+  --foreground: #27231f;
   --muted: #A1A1AA;
-  --primary-cta: #15479c;
-  --primary-cta-text: #f5faff;
+  --primary-cta: #27231f;
+  --primary-cta-text: #e3deea;
   --secondary-cta: #ffffff;
-  --secondary-cta-text: #001122;
-  --accent: #a8cce8;
-  --background-accent: #7ba3cf;
+  --secondary-cta-text: #27231f;
+  --accent: #c68a62;
+  --background-accent: #c68a62;
   --heading-cream: #F4F4F5;
 
   /* @layout/border-radius/soft */
@@ -103,7 +102,7 @@ html {
   --color-background-accent: var(--background-accent);
 
   /* Fonts */
-  --font-sans: 'Inter', sans-serif;
+  --font-sans: "Inter", sans-serif;
   --font-tight: "Inter Tight", sans-serif;
   --font-mono: monospace;
 
@@ -152,7 +151,7 @@ body {
   margin: 0;
   background-color: var(--background);
   color: var(--foreground);
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   position: relative;
   min-height: 100vh;
   overscroll-behavior: none;
@@ -165,7 +164,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Mulish', sans-serif;
+  font-family: "Inter", sans-serif;
   color: var(--heading-cream, #F4F4F5);
 }
 
